@@ -1,0 +1,9158 @@
+<html><head><title>ETIQUETAS EAGLES</title>
+
+   
+<meta name="description" content="El analizador morfológico para el castellano utiliza un conjunto de etiquetas para representar la información morfológica de las palabras. Este conjunto de etiquetas se basa en las etiquetas propuestas por el grupo EAGLES para la anotación morfosintáctica de lexicones y corpus para todas las lenguas europeas.">
+<meta name="Keywords" content="Universitat de Barcelona, Universitat Politècnica de Catalunya, analitzador morfològic, flexionador, lematitzador, etiquetador morfològic, anàlisi sintàctica, categories PAROLE, categories EAGLES, etiquetes PAROLE, etiquetes EAGLES" lang="ca">
+<meta name="Keywords" content="Universidad de Barcelona, Universidad Politécnica de Cataluña, analizador morfológico, flexionador, lematizador, etiquetador morfológico, análisis sintáctico, categorías PAROLE, categorías EAGLES, etiquetas PAROLE, etiquetas EAGLES" lang="es"></head><body bgcolor="#ffffff">
+
+<h3>INTRODUCCIÓN A LAS ETIQUETAS EAGLES</h3> <p align="justify">El
+<b>analizador morfológico para el castellano</b> utiliza un conjunto de
+etiquetas para representar la información morfológica de las palabras.
+Este conjunto de etiquetas se basa en las etiquetas propuestas por el 
+grupo <a href="http://www.ilc.pi.cnr.it/EAGLES96/home.html" target="_blank">EAGLES</a> para la anotación morfosintáctica de lexicones 
+y corpus para todas las lenguas europeas. Así pues está
+previsto que recojan los accidentes gramaticales existentes en las lenguas
+europeas. Es por esto que dependiendo de la lengua hay atributos que
+pueden no especificarse. Si un atributo no se especifica significa que o
+bien expresa un tipo de información que no existe en la lengua o que la
+información no se considera relevante. La infraespecificación de un atributo
+se marca con el 0. </p><p>
+
+
+A continuación presentamos las etiquetas que el analizador morfológico utiliza para el 
+castellano en formato de tabla y algunos ejemplos de cada categoría.<br><br>
+Para cada categoría se presentan los atributos, valores y códigos que puede tomar. 
+<br></p><blockquote>Ejemplo:</blockquote>
+
+<center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>ETIQUETAS</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="25%">
+<center><b>Posición</b><center></center></center></td>
+
+<td valign="top" width="25%">
+<center>
+<b>Atributo</b></center>
+</td>
+
+<td valign="top" width="25%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="25%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+
+<tr>
+<td nowrap="nowrap" valign="top" width="25%">
+<center><i>Columna 1</i><center></center></center></td>
+
+<td nowrap="nowrap" valign="top" width="25%">
+<center><i>Columna 2</i></center>
+</td>
+
+<td nowrap="nowrap" valign="top" width="25%">
+<center><i>Columna 3</i></center>
+</td>
+
+<td nowrap="nowrap" valign="top" width="25%">
+<center><i>Columna 4</i></center>
+</td>
+</tr>
+
+
+
+
+</tbody></table></center>
+
+<p>
+</p><p align="justify">
+En la <i>columna 1</i> encontramos un número que hace referencia al orden y posición en que aparecen los atributos. La <i>columna 2</i> hace referencia a los atributos, el número de los cuales varía dependiendo de la categoría. En la <i>columna 3</i> encontramos los valores que puede tomar cada atributo y, finalmente, la <i>columna 4</i>
+representa los códigos que se han establecido para su representación.
+Las etiquetas en sí sólo son los códigos (columna 4) y se sabe a qué
+atributo pertenecen por la posición (columna 1) en la que se
+encuentran. </p><p>
+<a name="índice">
+</a></p><h3><a name="índice">TABLAS DE ETIQUETAS POR CATEGORÍA</a></h3>
+<ol><li><a href="#adjetivos">ADJETIVOS</a>
+</li><li><a href="#adverbios">ADVERBIOS</a>
+</li><li><a href="#art%EDculos">ARTÍCULOS</a>
+</li><li><a href="#determinantes">DETERMINANTES</a>
+</li><li><a href="#nombres">NOMBRES</a>
+</li><li><a href="#verbos">VERBOS</a>
+</li><li><a href="#pronombres">PRONOMBRES</a>
+</li><li><a href="#conjunciones">CONJUNCIONES</a>
+</li><li><a href="#numerales">NUMERALES</a>
+</li><li><a href="#interjecciones">INTERJECCIONES</a>
+</li><li><a href="#abreviaturas">ABREVIATURAS</a>
+</li><li><a href="#preposiciones">PREPOSICIONES</a>
+</li><li><a href="#signos">SIGNOS DE PUNTUACIÓN</a>
+</li></ol>
+
+<hr>
+<a name="adjetivos"><b><h3>1. ADJETIVOS</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>ADJETIVOS</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center>
+<b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="11%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Adjetivo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>A</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>2</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Calificativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>Q</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>3</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Grado</center>
+</td>
+
+
+<td valign="top" width="32%">
+<center>Apreciativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>A</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>4</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Género</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Masculino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Femenino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Común</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>5</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Número</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Singular</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Plural</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Invariable</center>
+</td>
+
+<td valign="top" width="19%">
+<center>N</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>6</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Caso</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>7</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Función</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Participio</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p>
+</p><ul><li>
+<a name="adjetivos">El lema de los adjetivos siempre es la forma masculina singular (<i>bonito</i>)
+o la forma singular si el adjetivo es de género común (<i>alegre</i>).
+Para los adjetivos invariables, es decir, aquellos que tanto para el singular como
+para el plural presentan la misma forma, el lema coincide con la forma .
+</a></li></ul>
+<p>
+
+
+</p><p></p><blockquote><a name="adjetivos">Ejemplos:</a></blockquote>
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="34%">
+<center>alegres</center>
+</td>
+
+<td valign="top" width="33%">
+<center>alegre</center>
+</td>
+
+<td valign="top" width="33%">
+<center>AQ0CP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="34%">
+<center>alegre</center>
+</td>
+
+<td valign="top" width="33%">
+<center>alegre</center>
+</td>
+
+<td valign="top" width="33%">
+<center>AQ0CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="34%">
+<center>bonitas</center>
+</td>
+
+<td valign="top" width="33%">
+<center>bonito</center>
+</td>
+
+<td valign="top" width="33%">
+<center>AQ0FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="34%">
+<center>bonita</center>
+</td>
+
+<td valign="top" width="33%">
+<center>bonito</center>
+</td>
+
+<td valign="top" width="33%">
+<center>AQ0FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="34%">
+<center>bonitos</center>
+</td>
+
+<td valign="top" width="33%">
+<center>bonito</center>
+</td>
+
+<td valign="top" width="33%">
+<center>AQ0MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="34%">
+<center>bonito</center>
+</td>
+
+<td valign="top" width="33%">
+<center>bonito</center>
+</td>
+
+<td valign="top" width="33%">
+<center>AQ0MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="34%">
+<center>quemada</center>
+</td>
+
+<td valign="top" width="33%">
+<center>quemado</center>
+</td>
+
+<td valign="top" width="33%">
+<center>AQ0FS0P</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="adverbios"><b><h3>2. ADVERBIOS</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>ADVERBIOS</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Adverbio</center>
+</td>
+
+<td valign="top" width="19%">
+<center>R</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>2</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>General</center>
+</td>
+
+<td valign="top" width="19%">
+<center>G</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>3</center>
+</td>
+
+<td valign="top" width="37%">
+<center>-</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+<tr>
+<td valign="top" width="11%">
+<center>4</center>
+</td>
+
+<td valign="top" width="37%">
+<center>-</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>5</center>
+</td>
+
+<td valign="top" width="37%">
+<center>-</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+</tbody></table></center>
+
+
+<p>
+</p><ul><li>
+<a name="adverbios">Para los adverbios, ahora mismo, tan sólo indicamos que es de tipo general.
+</a><p>
+</p></li><li><a name="adverbios">La etiqueta final es RG000 y sirve tanto para los adverbios como para las locuciones adverbiales.
+</a></li></ul>
+
+<p></p><blockquote><a name="adverbios">Ejemplos:</a></blockquote>
+<center><table width="375">
+
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="33%">
+<center>despacio</center>
+</td>
+
+<td valign="top" width="33%">
+<center>despacio</center>
+</td>
+
+<td valign="top" width="33%">
+<center>RG000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>ahora</center>
+</td>
+
+<td valign="top" width="33%">
+<center>ahora</center>
+</td>
+
+<td valign="top" width="33%">
+<center>RG000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>siempre</center>
+</td>
+
+<td valign="top" width="33%">
+<center>siempre</center>
+</td>
+
+<td valign="top" width="33%">
+<center>RG000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>hábilmente</center>
+</td>
+
+<td valign="top" width="33%">
+<center>hábil</center>
+</td>
+
+<td valign="top" width="33%">
+<center>RG000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>posteriormente</center>
+</td>
+
+<td valign="top" width="33%">
+<center>posterior</center>
+</td>
+
+<td valign="top" width="33%">
+<center>RG000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="555">
+<center>a_cuatro_patas</center>
+</td>
+
+<td valign="top" width="33%">
+<center>a_cuatro_patas</center>
+</td>
+
+<td valign="top" width="33%">
+<center>RG000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>a_granel</center>
+</td>
+
+<td valign="top" width="33%">
+<center>a_granel</center>
+</td>
+
+<td valign="top" width="33%">
+<center>RG000</center>
+</td>
+</tr>
+</tbody></table></center>
+
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="artículos"><b><h3>3. ARTÍCULOS</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>ARTÍCULOS</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Artículo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>T</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>2</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Definido</center>
+</td>
+
+<td valign="top" width="19%">
+<center>D</center>
+</td>
+</tr>
+
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>3</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Género</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Masculino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Femenino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Común</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="11%">
+<center>4</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Número</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Singular</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Plural</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>5</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Caso</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+</tbody></table></center>
+<p>
+
+</p><ul><li>
+<a name="artículos">Aunque está prevista la categoría de <i>artículo
+indefinido</i> no la contemplamos puesto que hemos decidido tratar las
+formas del paradigma <i>un</i> como determinantes indefinidos o numerales.
+</a></li></ul>
+
+<p></p><blockquote><a name="artículos">Ejemplos:</a></blockquote>
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Forma</font></b><center>
+</center></center></td>
+
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="31%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>el</center>
+</td>
+
+<td valign="top" width="33%">
+<center>el</center>
+</td>
+
+<td valign="top" width="33%">
+<center>TDMS0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>los</center>
+</td>
+
+<td valign="top" width="33%">
+<center>el</center>
+</td>
+
+<td valign="top" width="37%">
+<center>TDMP0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>lo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>el</center>
+</td>
+
+<td valign="top" width="33%">
+<center>TDCS0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>la</center>
+</td>
+
+<td valign="top" width="33%">
+<center>la</center>
+</td>
+
+<td valign="top" width="33%">
+<center>TDFS0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="33%">
+<center>las</center>
+</td>
+
+<td valign="top" width="33%">
+<center>la</center>
+</td>
+
+<td valign="top" width="33%">
+<center>TDFP0</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="determinantes"><b><h3>4. DETERMINANTES</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>DETERMINANTES</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Determinante</center>
+</td>
+
+<td valign="top" width="19%">
+<center>D</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="5" valign="top" width="12%">
+<center>2</center>
+</td>
+
+<td rowspan="5" valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Demostrativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>D</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Posesivo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Interrogativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>T</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Exclamativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>E</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Indefinido</center>
+</td>
+
+<td valign="top" width="19%">
+<center>I</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="12%">
+<center>3</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Persona</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Primera</center>
+</td>
+
+<td valign="top" width="19%">
+<center>1</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Segunda</center>
+</td>
+
+<td valign="top" width="19%">
+<center>2</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Tercera</center>
+</td>
+
+<td valign="top" width="19%">
+<center>3</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="12%">
+<center>4</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Género</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Masculino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Femenino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Común</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="12%">
+<center>5</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Número</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Singular</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Plural</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Invariable</center>
+</td>
+
+<td valign="top" width="19%">
+<center>N</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>6</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Caso</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="5" valign="top" width="12%">
+<center>7</center>
+</td>
+
+<td rowspan="5" valign="top" width="37%">
+<center>Poseedor</center>
+</td>
+
+<td valign="top" width="32%">
+<center>1ª persona-sg</center>
+</td>
+
+<td valign="top" width="19%">
+<center>1</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>2ª persona-sg</center>
+</td>
+
+<td valign="top" width="19%">
+<center>2</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>3ª persona</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>1ª persona-pl</center>
+</td>
+
+<td valign="top" width="19%">
+<center>4</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>2ª persona-pl</center>
+</td>
+
+<td valign="top" width="19%">
+<center>5</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p>
+</p><ul><li>
+<a name="determinantes">El atributo de <i>Caso</i> no se especifica en español y el atributo
+de <i>Poseedor</i> sólo se usará con los determinantes posesivos.
+</a></li></ul>
+
+<p></p><blockquote><a name="determinantes">Ejemplos:</a></blockquote>
+<dir>
+<dir><a name="determinantes">4.1. Determinantes Demostrativos</a></dir>
+</dir>
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="37%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="36%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="32%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>aquella</center>
+</td>
+
+<td valign="top" width="32%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>aquellas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>aquellos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>esa</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>esas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>esos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>esta</center>
+</td>
+
+<td valign="top" width="32%">
+<center>este</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>estas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>este</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>este</center>
+</td>
+
+<td valign="top" width="32%">
+<center>este</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>estos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>este</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DD3MP00</center>
+</td>
+</tr>
+
+</tbody></table></center>
+
+<dir>
+<dir><a name="determinantes">4.2. Determinantes Posesivos</a></dir>
+</dir>
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="36%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>mi</center>
+</td>
+
+<td valign="top" width="26%">
+<center>mi</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3CS01</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>mis</center>
+</td>
+
+<td valign="top" width="26%">
+<center>mi</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3CP01</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>tu</center>
+</td>
+
+<td valign="top" width="26%">
+<center>tu</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3CS02</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>tus</center>
+</td>
+
+<td valign="top" width="26%">
+<center>tu</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3CP02</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>su</center>
+</td>
+
+<td valign="top" width="26%">
+<center>su</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>sus</center>
+</td>
+
+<td valign="top" width="26%">
+<center>su</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3CP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>nuestra</center>
+</td>
+
+<td valign="top" width="26%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3FS04</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>nuestras</center>
+</td>
+
+<td valign="top" width="26%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3FP04</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="26%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3MS04</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>nuestros</center>
+</td>
+
+<td valign="top" width="26%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3MP04</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="39%">
+<center>vuestra</center>
+</td>
+
+<td valign="top" width="26%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3FS05</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>vuestras</center>
+</td>
+
+<td valign="top" width="26%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3FP05</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="26%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3MS05</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>vuestros</center>
+</td>
+
+<td valign="top" width="26%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3MP05</center>
+</td>
+</tr>
+
+
+
+<tr>
+<td valign="top" width="39%">
+<center>suya</center>
+</td>
+
+<td valign="top" width="26%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>suyas</center>
+</td>
+
+<td valign="top" width="26%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3FP00</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="39%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="26%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="39%">
+<center>suyos</center>
+</td>
+
+<td valign="top" width="26%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="35%">
+<center>DP3MP00</center>
+</td>
+</tr>
+
+</tbody></table></center>
+
+<dir>
+<dir><a name="determinantes">4.3. Determinantes Interrogativos</a></dir>
+</dir>
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>cuánta</center>
+</td>
+
+<td valign="top" width="32%">
+<center>cuánto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DT3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>cuántas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>cuánto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DT3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>cuánto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>cuánto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DT3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>cuántos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>cuánto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DT3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>qué</center>
+</td>
+
+<td valign="top" width="32%">
+<center>qué</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DT3CN00</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<dir>
+<dir><a name="determinantes">4.4. Determinantes Exclamativos</a></dir>
+</dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="35%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="35%">
+<center>qué</center>
+</td>
+
+<td valign="top" width="32%">
+<center>qué</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DE3CN00</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<dir>
+<dir><a name="determinantes">4.5. Determinantes Indefinidos</a></dir>
+</dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="36%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>alguna</center>
+</td>
+
+<td valign="top" width="32%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>algunas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>algún</center>
+</td>
+
+<td valign="top" width="32%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>algunos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MP00</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="36%">
+<center>bastante</center>
+</td>
+
+<td valign="top" width="32%">
+<center>bastante</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>bastantes</center>
+</td>
+
+<td valign="top" width="32%">
+<center>bastante</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3CP00</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="36%">
+<center>cada</center>
+</td>
+
+<td valign="top" width="32%">
+<center>cada</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3CS00</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="36%">
+<center>ninguna</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>ningunas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>ningún</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>ningunos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>otra</center>
+</td>
+
+<td valign="top" width="32%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>otras</center>
+</td>
+
+<td valign="top" width="32%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="32%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>otros</center>
+</td>
+
+<td valign="top" width="32%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>sendas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>sendos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>sendos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>sendos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>tantas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>tanta</center>
+</td>
+
+<td valign="top" width="32%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>tantos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>todas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>toda</center>
+</td>
+
+<td valign="top" width="32%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>todos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>unas</center>
+</td>
+
+<td valign="top" width="32%">
+<center>un</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>una</center>
+</td>
+
+<td valign="top" width="32%">
+<center>un</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>unos</center>
+</td>
+
+<td valign="top" width="32%">
+<center>un</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>un</center>
+</td>
+
+<td valign="top" width="32%">
+<center>un</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>varias</center>
+</td>
+
+<td valign="top" width="32%">
+<center>varias</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3FP00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="36%">
+<center>varios</center>
+</td>
+
+<td valign="top" width="32%">
+<center>varios</center>
+</td>
+
+<td valign="top" width="32%">
+<center>DI3MP00</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="nombres"><b><h3>5. NOMBRES</h3></b>
+
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>NOMBRES</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Nombre</center>
+</td>
+
+<td valign="top" width="19%">
+<center>N</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="11%">
+<center>2</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Común</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Propio</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>3</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Género</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Masculino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Femenino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Común</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>4</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Número</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Singular</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Plural</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Invariable</center>
+</td>
+
+<td valign="top" width="19%">
+<center>N</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>5</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Caso</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>6</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Género Semántico</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center></td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>7</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Grado</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Apreciativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>A</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<ul>
+<li><a name="nombres">Los atributos que corresponden a <i>Caso</i> y<i> Género semántico
+</i>no se especifican, por lo tanto el valor será 0.
+</a><p></p></li><li><a name="nombres">Los nombres tienen como lema la forma singular, tanto si es de género
+femenino como masculino o neutro. Para los nombres invariables, es decir, aquellos 
+que tanto para el singular como para el plural presentan la misma forma (<i>tesis</i>),
+el lema coincide con la forma.
+</a></li></ul>
+
+<p></p><blockquote><a name="nombres">Ejemplos:</a></blockquote>
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="36%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>chico</center>
+</td>
+
+<td valign="top" width="36%">
+<center>chico</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NCMS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>chicos</center>
+</td>
+
+<td valign="top" width="36%">
+<center>chico</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NCMP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>chica</center>
+</td>
+
+<td valign="top" width="36%">
+<center>chica</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NCFS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>chicas</center>
+</td>
+
+<td valign="top" width="36%">
+<center>chica</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NCFP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>oyente</center>
+</td>
+
+<td valign="top" width="36%">
+<center>oyente</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NCCS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>oyentes</center>
+</td>
+
+<td valign="top" width="36%">
+<center>oyente</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NCCP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>cortapapeles</center>
+</td>
+
+<td valign="top" width="36%">
+<center>cortapapeles</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NCMN000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>tesis</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tesis</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NCFN000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Antonio</center>
+</td>
+
+<td valign="top" width="36%">
+<center>antonio</center>
+</td>
+
+<td valign="top" width="32%">
+<center>NP00000</center>
+</td>
+</tr>
+
+</tbody></table></center>
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="verbos"><b><h3>6. VERBOS</h3></b>
+</a><center><table border="1" width="381">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>VERBOS</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Verbo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>V</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="11%">
+<center>2</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Principal</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Auxiliar</center>
+</td>
+
+<td valign="top" width="19%">
+<center>A</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="7" valign="top" width="11%">
+<center>3</center>
+</td>
+
+<td rowspan="7" valign="top" width="37%">
+<center>Modo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Indicativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>I</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Subjuntivo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Imperativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center><p>Condicional</p></center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Infinitivo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>N</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Gerundio</center>
+</td>
+
+<td valign="top" width="19%">
+<center>G</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Participio</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="4" valign="top" width="11%">
+<center>4</center>
+</td>
+
+<td rowspan="4" valign="top" width="37%">
+<center>Tiempo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Presente</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Imperfecto</center>
+</td>
+
+<td valign="top" width="19%">
+<center>I</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Futuro</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Pasado</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>5</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Persona</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Primera</center>
+</td>
+
+<td valign="top" width="19%">
+<center>1</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Segunda</center>
+</td>
+
+<td valign="top" width="19%">
+<center>2</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Tercera</center>
+</td>
+
+<td valign="top" width="19%">
+<center>3</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="11%">
+<center>6</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Número</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Singular</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Plural</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="11%">
+<center>7</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Género</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Masculino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Femenino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<ul>
+<li><a name="verbos">El lema del verbo <u>siempre</u> es el infinitivo.
+</a><p></p></li><li><a name="verbos">El atributo de <i>Género</i> tan sólo afecta a los participios, para el resto de formas este atributo no se especifica (0).
+</a></li></ul>
+<p>
+</p><center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="36%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>cantada</center>
+</td>
+
+<td valign="top" width="36%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="32%">
+<center>VMP00S<b><i>F</i></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>cantadas</center>
+</td>
+
+<td valign="top" width="36%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="32%">
+<center>VMP00P<b><i>F</i></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>cantado</center>
+</td>
+
+<td valign="top" width="36%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="32%">
+<center>VMP00S<b><i>M</i></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>cantados</center>
+</td>
+
+<td valign="top" width="36%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="32%">
+<center>VMP00P<b><i>M</i></b></center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p></p><blockquote><a name="verbos">Ejemplos:</a></blockquote>
+
+<p>
+</p><center><table border="1" width="732">
+<tbody><tr>
+<td rowspan="2" bgcolor="#000066" valign="top" width="21%">
+<br>
+<center><b><font color="#ffffff">Tiempo</font></b></center>
+</td>
+
+<td colspan="3" bgcolor="#000066" valign="top" width="39%">
+<center><b><font color="#ffffff">VERBOS PRINCIPALES</font></b></center>
+</td>
+
+<td rowspan="67" valign="top" width="2%">&nbsp;</td>
+
+<td colspan="3" bgcolor="#000066" valign="top" width="39%">
+<center><b><font color="#ffffff">VERBOS AUXILIARES</font></b></center>
+
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#000066" valign="top" width="16%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="8%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="15%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="13%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="11%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="15%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="6" valign="top" width="21%">
+<br>
+<br>
+<center>
+<p>PRESENTE DE INDICATIVO</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>canto</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIP1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>soy</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIP1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantas</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIP2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>eres</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIP2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>canta</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIP3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>es</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIP3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantamos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIP1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>somos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIP1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantáis</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIP2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sois</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIP2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantan</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIP3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>son</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIP3P0</center>
+</td>
+</tr>
+
+
+<tr>
+<td rowspan="6" valign="top" width="21%">
+<br>
+<br>
+<center>
+<p>PRETÉRITO IMPERFECTO</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>cantaba</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMII1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>era</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAII1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantabas</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMII2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>eras</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAII2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaba</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMII3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>era</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAII3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantábamos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMII1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>eramos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAII1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantabais</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMII2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>erais</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAII2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaban</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMII3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>eran</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAII3P0</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="6" valign="top" width="21%">
+<br>
+<br>
+<center>
+<p>PRETÉRITO
+PERFECTO
+SIMPLE</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>canté</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIS1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fui</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIS1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaste</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIS2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuiste</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIS2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantó</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIS3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fue</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIS3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantamos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIS1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuimos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIS1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantasteis</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIS2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuisteis</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIS2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaron</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIS3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fueron</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIS3P0</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="6" valign="top" width="21%">
+<br>
+<br>
+<br>
+<center><p>FUTURO DE INDICATIVO</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>cantaré</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIF1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seré</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIF1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantarás</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIF2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>serás</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIF2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantará</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIF3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>será</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIF3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaremos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIF1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seremos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIF1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaréis</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIF2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seréis</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIF2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantarán</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMIF3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>serán</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAIF3P0</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="6" valign="top" width="21%">
+<br>
+<br>
+<br>
+<center><p>CONDICIONAL</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>cantaría</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMCP1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sería</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VACP1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantarías</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMCP2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>serías</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VACP2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaría</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMCP3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sería</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VACP3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaríamos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMCP1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seríamos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VACP1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaríais</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMCP2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seríais</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VACP2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantarían</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMCP3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>serían</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VACP3P0</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="6" valign="top" width="21%">
+<br>
+<br>
+<br>
+<center>
+<p>PRESENTE DE SUBJUNTIVO</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>cante</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSP1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sea</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASP1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantes</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSP2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seas</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASP2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cante</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSP3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sea</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASP3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantemos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSP1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seamos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASP1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantéis</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSP2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seáis</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASP2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>canten</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSP3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sean</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASP3P0</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="12" valign="top" width="21%">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<p>PRETÉRITO IMPERFECTO</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>cantara</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuera</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaras</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fueras</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantara</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuera</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantáramos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuéramos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantarais</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuerais</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaran</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fueran</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI3P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantase</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuese</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantases</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fueses</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantase</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuese</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantásemos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuésemos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaseis</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fueseis</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantasen</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSI3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuesen</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASI3P0</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="6" valign="top" width="21%">
+<br>
+<br>
+<br>
+<center>
+<p>FUTURO DE SUBJUNTIVO</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>cantare</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSF1S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuere</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASF1S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantares</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSF2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fueres</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASF2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantare</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSF3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuere</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASF3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantáremos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSF1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuéremos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASF1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantareis</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSF2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fuereis</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASF2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantaren</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMSF3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>fueren</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VASF3P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="21%">
+<center>GERUNDIO</center>
+</td>
+
+<td valign="top" width="16%">
+<center>cantando</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMG0000</center>
+</td>
+
+<td valign="top" width="13%">
+<center>siendo</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAG0000</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="5" valign="top" width="21%">
+<br>
+<br>
+<center>
+<p>IMPERATIVO</p></center>
+</td>
+
+<td valign="top" width="16%">
+<center>canta</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMMP2S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sé</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAMP2S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cante</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMMP3S0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sea</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAMP3S0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantemos</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMMP1P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>seamos</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAMP1P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantad</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMMP2P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sed</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAMP2P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>canten</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMMP3P0</center>
+</td>
+
+<td valign="top" width="13%">
+<center>sean</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAMP3P0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="21%">
+<center>INFINITIVO</center>
+</td>
+
+<td valign="top" width="16%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMN0000</center>
+</td>
+
+<td valign="top" width="13%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="11%">
+<center>ser</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VAN0000</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="4" valign="top" width="21%">
+<br>
+<br>
+<center>PARTICIPIO</center>
+</td>
+
+<td valign="top" width="16%">
+<center>cantada</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMP00SF</center>
+</td>
+
+<td rowspan="4" valign="top" width="13%">
+<br>
+<br>
+<center>sido</center>
+</td>
+
+<td rowspan="4" valign="top" width="11%">
+<br>
+<br>
+<center>ser</center>
+</td>
+
+<td rowspan="4" valign="top" width="15%">
+<br>
+<br>
+<center>VAP00NC</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantado</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMP00SM</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantadas</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMP00PF</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="16%">
+<center>cantados</center>
+</td>
+
+<td valign="top" width="8%">
+<center>cantar</center>
+</td>
+
+<td valign="top" width="15%">
+<center>VMP00PM</center>
+</td>
+</tr>
+</tbody></table>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p></p></center>
+
+<hr>
+<a name="pronombres"><b><h3>7. PRONOMBRES</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>PRONOMBRES</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Pronombre</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="6" valign="top" width="11%">
+<center>2</center>
+</td>
+
+<td rowspan="6" valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Personal</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Demostrativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>D</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Posesivo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>X</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Indefinido</center>
+</td>
+
+<td valign="top" width="19%">
+<center>I</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Interrogativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>T</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Relativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>R</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>3</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Persona</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Primera</center>
+</td>
+
+<td valign="top" width="19%">
+<center>1</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Segunda</center>
+</td>
+
+<td valign="top" width="19%">
+<center>2</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Tercera</center>
+</td>
+
+<td valign="top" width="19%">
+<center>3</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>4</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Género</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Masculino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Femenino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Común</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>5</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Número</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Singular</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Plural</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Invariable</center>
+</td>
+
+<td valign="top" width="19%">
+<center>N</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="4" valign="top" width="11%">
+<center>6</center>
+</td>
+
+<td rowspan="4" valign="top" width="37%">
+<center>Caso</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Nominativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>N</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Acusativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>A</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Dativo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>D</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Oblicuo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>O</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="5" valign="top" width="11%">
+<center>7</center>
+</td>
+
+<td rowspan="5" valign="top" width="37%">
+<center>Poseedor</center>
+</td>
+
+<td valign="top" width="32%">
+<center>1ª persona-sg</center>
+</td>
+
+<td valign="top" width="19%">
+<center>1</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>2ª persona-sg</center>
+</td>
+
+<td valign="top" width="19%">
+<center>2</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>3ª persona</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>1ª persona-pl</center>
+</td>
+
+<td valign="top" width="19%">
+<center>4</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>2ª persona-pl</center>
+</td>
+
+<td valign="top" width="19%">
+<center>5</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>8</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Politeness</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Polite</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p><a name="pronombres">  
+</a></p><ul><li>
+<a name="pronombres">El atributo de <i>Caso</i> se especifica para los pronombres personales y el 
+atributo de <i>Poseedor</i> sólo se usará con los pronombres posesivos.
+</a></li></ul>
+
+
+<dir>
+<dir><a name="pronombres">7.1. Pronombres personales</a></dir>
+</dir>
+<p>
+
+</p><ul>
+<li><a name="pronombres">Los pronombres personales tienen como lema la forma singular: <i>yo</i>,<i> tú y él</i>.
+</a></li></ul>
+
+<p>
+
+
+</p><center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="36%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td valign="top" width="32%">
+<center>yo</center>
+</td>
+
+<td valign="top" width="36%">
+<center>yo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP1CSN00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>me</center>
+</td>
+
+<td valign="top" width="36%">
+<center>yo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP1CS000</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="32%">
+<center>mí</center>
+</td>
+
+<td valign="top" width="36%">
+<center>yo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP1CSO00</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="32%">
+<center>nos</center>
+</td>
+
+<td valign="top" width="36%">
+<center>yo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP1CP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>nosotras</center>
+</td>
+
+<td valign="top" width="36%">
+<center>yo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP1FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>nosotros</center>
+</td>
+
+<td valign="top" width="36%">
+<center>yo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP1MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>conmigo</center>
+</td>
+
+<td valign="top" width="36%">
+<center>yo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP1CSO00</center>
+</td>
+</tr>
+<tr>
+<td valign="top" width="32%">
+<center>te</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2CS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>ti</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tu</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2CSO00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2CSN00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>os</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2CP000</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="32%">
+<center>usted</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2CS00P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>ustedes</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2CP00P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>vos</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3CS00P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>vosotras</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>vosotros</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2MP000</center>
+</td>
+</tr>
+
+
+
+<tr>
+<td valign="top" width="32%">
+<center>contigo</center>
+</td>
+
+<td valign="top" width="36%">
+<center>tú</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP2CNO00</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="32%">
+<center>él</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>ella</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>ellas</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>ello</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3CS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>ellos</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>la</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3FSA00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>las</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3FPA00</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="32%">
+<center>lo</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3MSA00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>lo</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3CNA00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>los</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3MPA00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>le</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3CSD00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>les</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3CPD00</center>
+</td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td valign="top" width="32%">
+<center>se</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3CN000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>sí</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3CNO00</center>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td valign="top" width="32%">
+<center>consigo</center>
+</td>
+
+<td valign="top" width="36%">
+<center>él</center>
+</td>
+
+<td valign="top" width="32%">
+<center>PP3CNO00</center>
+</td>
+</tr>
+
+
+
+
+
+
+</tbody></table></center>
+
+<dir>
+<dir><a name="pronombres">7.2. Pronombres demostrativos</a></dir>
+</dir>
+
+<center><table width="375"><tbody><tr>
+<td bgcolor="#000066" valign="top" width="37%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="30%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquéllas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquél</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquélla</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquél</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquéllos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquél</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquél</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquél</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquellas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquella</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquellos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquel</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>aquello</center>
+</td>
+
+<td valign="top" width="30%">
+<center>aquello</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3CS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ésas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>ése</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ésa</center>
+</td>
+
+<td valign="top" width="30%">
+<center>ése</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>esas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>esa</center>
+</td>
+
+<td valign="top" width="30%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>esos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="30%">
+<center>ese</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ésos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>ése</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ése</center>
+</td>
+
+<td valign="top" width="30%">
+<center>ése</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>eso</center>
+</td>
+
+<td valign="top" width="30%">
+<center>eso</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3CS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>esotra</center>
+</td>
+
+<td valign="top" width="30%">
+<center>esotro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>esotro</center>
+</td>
+
+<td valign="top" width="30%">
+<center>esotro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>esta</center>
+</td>
+
+<td valign="top" width="30%">
+<center>este</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>éstas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>éste</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ésta</center>
+</td>
+
+<td valign="top" width="30%">
+<center>éste</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>estas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>este</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>esta</center>
+</td>
+
+<td valign="top" width="30%">
+<center>este</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>estos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>este</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>este</center>
+</td>
+
+<td valign="top" width="30%">
+<center>este</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>éstos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>éste</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>éste</center>
+</td>
+
+<td valign="top" width="30%">
+<center>éste</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>esto</center>
+</td>
+
+<td valign="top" width="30%">
+<center>esto</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3CS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>estotra</center>
+</td>
+
+<td valign="top" width="30%">
+<center>estotro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>estotro</center>
+</td>
+
+<td valign="top" width="30%">
+<center>estotro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PD3MS000</center>
+</td>
+</tr>
+</tbody></table>
+</center>
+<dir>
+<dir><a name="pronombres">7.3. Pronombres posesivos</a></dir>
+</dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="37%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="29%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>mía</center>
+</td>
+
+<td valign="top" width="29%">
+<center>mío</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FS010</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>mías</center>
+</td>
+
+<td valign="top" width="29%">
+<center>mío</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FP010</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>mío</center>
+</td>
+
+<td valign="top" width="29%">
+<center>mío</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MS010</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>míos</center>
+</td>
+
+<td valign="top" width="29%">
+<center>mío</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MP010</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>nuestra</center>
+</td>
+
+<td valign="top" width="29%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FS040</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>nuestras</center>
+</td>
+
+<td valign="top" width="29%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FP040</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="29%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MS040</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>nuestros</center>
+</td>
+
+<td valign="top" width="29%">
+<center>nuestro</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MP040</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>suya</center>
+</td>
+
+<td valign="top" width="29%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>suyas</center>
+</td>
+
+<td valign="top" width="29%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="29%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>suyos</center>
+</td>
+
+<td valign="top" width="29%">
+<center>suyo</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>tuya</center>
+</td>
+
+<td valign="top" width="29%">
+<center>tuyo</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FS020</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>tuyas</center>
+</td>
+
+<td valign="top" width="29%">
+<center>tuyo</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FP020</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>tuyo</center>
+</td>
+
+<td valign="top" width="29%">
+<center>tuyo</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MS020</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>tuyos</center>
+</td>
+
+<td valign="top" width="29%">
+<center>tuyo</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MP020</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>vuestra</center>
+</td>
+
+<td valign="top" width="29%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FS050</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>vuestras</center>
+</td>
+
+<td valign="top" width="29%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3FP050</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="29%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="34%">
+<center>PX3MS050</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="34%">
+<center>vuestros</center>
+</td>
+
+<td valign="top" width="33%">
+<center>vuestro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PX3MP050</center>
+</td>
+</tr>
+</tbody></table>
+</center>
+
+<dir>
+<dir><a name="pronombres">7.4. Pronombres indefinidos</a></dir>
+</dir>
+
+<center><table width="375">
+
+<tbody><tr><td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>algo</center>
+</td>
+
+<td valign="top" width="30%">
+<center>algo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CN000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>alguien</center>
+</td>
+
+<td valign="top" width="30%">
+<center>alguien</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CN000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>alguna</center>
+</td>
+
+<td valign="top" width="30%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>algunas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="30%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>algunos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>alguno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>cualesquiera</center>
+</td>
+
+<td valign="top" width="30%">
+<center>cualquiera</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>cualquiera</center>
+</td>
+
+<td valign="top" width="30%">
+<center>cualquiera</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>demás</center>
+</td>
+
+<td valign="top" width="30%">
+<center>demás</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>misma</center>
+</td>
+
+<td valign="top" width="30%">
+<center>mismo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>mismas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>mismo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>mismo</center>
+</td>
+
+<td valign="top" width="30%">
+<center>mismo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>mismos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>mismo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>mucha</center>
+</td>
+
+<td valign="top" width="30%">
+<center>mucho</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>muchas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>mucho</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="37%">
+<center>mucho</center>
+</td>
+
+<td valign="top" width="30%">
+<center>mucho</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>muchos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>mucho</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>nada</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>nada</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CN000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>nadie</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>nadie</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CN000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ninguna</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ningunas</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ninguno</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>ningunos</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>ninguno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>otra</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>otras</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>otro</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>otros</center>
+</td>
+
+
+<td valign="top" width="30%">
+<center>otro</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>poca</center>
+</td>
+
+<td valign="top" width="30%">
+<center>poco</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>pocas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>poco</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td></tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>poco</center>
+</td>
+
+<td valign="top" width="30%">
+<center>poco</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" width="37%">
+<center>pocos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>poco</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>quienquier</center>
+</td>
+
+<td valign="top" width="30%">
+<center>quienquiera</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>quienesquiera</center>
+</td>
+
+<td valign="top" width="30%">
+<center>quienquiera</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>quienquiera</center>
+</td>
+
+<td valign="top" width="30%">
+<center>quienquiera</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3CS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>tanta</center>
+</td>
+
+<td valign="top" width="30%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>tantas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="30%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>tantos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>tanto</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>toda</center>
+</td>
+
+<td valign="top" width="30%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>todas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="30%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>todos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>todo</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>última</center>
+</td>
+
+<td valign="top" width="30%">
+<center>último</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>últimas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>último</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>último</center>
+</td>
+
+<td valign="top" width="30%">
+<center>último</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>últimos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>último</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>una</center>
+</td>
+
+<td valign="top" width="30%">
+<center>uno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>unas</center>
+</td>
+
+<td valign="top" width="30%">
+<center>uno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>uno</center>
+</td>
+
+<td valign="top" width="30%">
+<center>uno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MS000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>unos</center>
+</td>
+
+<td valign="top" width="30%">
+<center>uno</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>varias</center>
+</td>
+
+<td valign="top" width="30%">
+<center>varios</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3FP000</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="37%">
+<center>varios</center>
+</td>
+
+<td valign="top" width="30%">
+<center>varios</center>
+</td>
+
+<td valign="top" width="33%">
+<center>PI3MP000</center>
+</td>
+</tr>
+</tbody></table>
+</center>
+
+<dir>
+<dir><a name="pronombres">7.5. Pronombres interrogativos</a></dir>
+</dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="32%">
+<center><b><font color="#ffffff">Forma</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="33%">
+<center><b><font color="#ffffff">Lema</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="35%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>adónde</center></td>
+
+<td valign="top" width="33%"><center>adónde</center></td>
+
+<td valign="top" width="35%"><center>PT000000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cómo</center></td>
+
+<td valign="top" width="33%"><center>cómo</center></td>
+
+<td valign="top" width="35%"><center>PT000000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuál</center></td>
+
+<td valign="top" width="33%"><center>cuál</center></td>
+
+<td valign="top" width="35%"><center>PT3CS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuáles</center></td>
+
+<td valign="top" width="33%"><center>cuál</center></td>
+
+<td valign="top" width="35%"><center>PT3CP000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuándo</center></td>
+
+<td valign="top" width="33%"><center>cuándo</center></td>
+
+<td valign="top" width="35%"><center>PT000000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuánta</center></td>
+
+<td valign="top" width="33%"><center>cuánto</center></td>
+
+<td valign="top" width="35%"><center>PT3FS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuántas</center></td>
+
+<td valign="top" width="33%"><center>cuánto</center></td>
+
+<td valign="top" width="35%"><center>PT3FP000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuánto</center></td>
+
+<td valign="top" width="33%"><center>cuánto</center></td>
+
+<td valign="top" width="35%"><center>PT3MS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuántos</center></td>
+
+<td valign="top" width="33%"><center>cuánto</center></td>
+
+<td valign="top" width="35%"><center>PT3MP000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>dónde</center></td>
+
+<td valign="top" width="33%"><center>dónde</center></td>
+
+<td valign="top" width="35%"><center>PT000000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>qué</center></td>
+
+<td valign="top" width="33%"><center>qué</center></td>
+
+<td valign="top" width="35%"><center>PT3CN000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>quién</center></td>
+
+<td valign="top" width="33%"><center>quién</center></td>
+
+<td valign="top" width="35%"><center>PT3CS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>quiénes</center></td>
+
+<td valign="top" width="33%"><center>quién</center></td>
+
+<td valign="top" width="35%"><center>PT3CP000</center></td>
+</tr>
+</tbody></table></center>
+
+<dir>
+<dir>
+<p><a name="pronombres">7.6. Pronombres relativos
+</a></p></dir></dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="32%"><center><b><font color="#ffffff">Forma</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="33%"><center><b><font color="#ffffff">Lema</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="35%"><center><b><font color="#ffffff">Etiqueta</font></b></center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>como</center></td>
+
+<td valign="top" width="33%"><center>como</center></td>
+
+<td valign="top" width="35%"><center>PR000000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>donde</center></td>
+
+<td valign="top" width="33%"><center>donde</center></td>
+
+<td valign="top" width="35%"><center>PR000000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuando</center></td>
+
+<td valign="top" width="33%"><center>cuando</center></td>
+
+<td valign="top" width="35%"><center>PR000000</center></td>
+</tr>
+
+
+<tr>
+<td valign="top" width="32%"><center>cual</center></td>
+
+<td valign="top" width="33%"><center>cual</center></td>
+
+<td valign="top" width="35%"><center>PR3CS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuales</center></td>
+
+<td valign="top" width="33%"><center>cual</center></td>
+
+<td valign="top" width="35%"><center>PR3CP000</center></td>
+</tr>
+
+
+<tr>
+<td valign="top" width="32%"><center>cuanta</center></td>
+
+<td valign="top" width="33%"><center>cuanto</center></td>
+
+<td valign="top" width="35%"><center>PR3FS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuantas</center></td>
+
+<td valign="top" width="33%"><center>cuanto</center></td>
+
+<td valign="top" width="35%"><center>PR3FP000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuantos</center></td>
+
+<td valign="top" width="33%"><center>cuanto</center></td>
+
+<td valign="top" width="35%"><center>PR3MP000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuya</center></td>
+
+<td valign="top" width="33%"><center>cuyo</center></td>
+
+<td valign="top" width="35%"><center>PR3FS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuyas</center></td>
+
+<td valign="top" width="33%"><center>cuyo</center></td>
+
+<td valign="top" width="35%"><center>PR3FP000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuyo</center></td>
+
+<td valign="top" width="33%"><center>cuyo</center></td>
+
+<td valign="top" width="35%"><center>PR3MS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>cuyos</center></td>
+
+<td valign="top" width="33%"><center>cuyo</center></td>
+
+<td valign="top" width="35%"><center>PR3MP000</center></td>
+</tr>
+
+
+<tr>
+<td valign="top" width="32%"><center>que</center></td>
+
+<td valign="top" width="33%"><center>que</center></td>
+
+<td valign="top" width="35%"><center>PR3CN000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>quien</center></td>
+
+<td valign="top" width="33%"><center>quien</center></td>
+
+<td valign="top" width="35%"><center>PR3CS000</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="32%"><center>quienes</center></td>
+
+<td valign="top" width="33%"><center>quien</center></td>
+
+<td valign="top" width="35%"><center>PR3CP000</center></td>
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="conjunciones"><b><h3>8. CONJUNCIONES</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>CONJUNCIONES</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Conjunción</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="12%">
+<center>2</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Coordinada</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Subordinada</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>3</center>
+</td>
+
+<td valign="top" width="37%">
+<center>-</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>4</center>
+</td>
+
+<td valign="top" width="37%">
+<center>-</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+</tbody></table></center>
+
+
+<p>
+</p><ul>
+<li><a name="conjunciones">Los últimos dos dígitos de la etiqueta siempre serán 0.
+</a></li></ul>
+
+<dir>
+<dir><a name="conjunciones">8.1. Conjunción Coordinada</a></dir>
+</dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="31%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="40%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="29%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>e</center>
+</td>
+
+<td valign="top" width="40%">
+<center>e</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>empero</center>
+</td>
+
+<td valign="top" width="40%">
+<center>empero</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>mas</center>
+</td>
+
+<td valign="top" width="40%">
+<center>mas</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>ni</center>
+</td>
+
+<td valign="top" width="40%">
+<center>ni</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>o</center>
+</td>
+
+<td valign="top" width="40%">
+<center>o</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>ora</center>
+</td>
+
+<td valign="top" width="40%">
+<center>ora</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>pero</center>
+</td>
+
+<td valign="top" width="40%">
+<center>pero</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>sino</center>
+</td>
+
+<td valign="top" width="40%">
+<center>sino</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>siquiera</center>
+</td>
+
+<td valign="top" width="40%">
+<center>siquiera</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>u</center>
+</td>
+
+<td valign="top" width="40%">
+<center>u</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>y</center>
+</td>
+
+<td valign="top" width="40%">
+<center>y</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CC00</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<dir>
+<dir>
+<a name="conjunciones">8.2. Conjunció Subordinada
+</a></dir>
+</dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="31%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="40%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="29%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>aunque</center>
+</td>
+
+<td valign="top" width="40%">
+<center>aunque</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>como</center>
+</td>
+
+<td valign="top" width="40%">
+<center>como</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>conque</center>
+</td>
+
+<td valign="top" width="40%">
+<center>conque</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>cuando</center>
+</td>
+
+<td valign="top" width="40%">
+<center>cuando</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>donde</center>
+</td>
+
+<td valign="top" width="40%">
+<center>donde</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>entonces</center>
+</td>
+
+<td valign="top" width="40%">
+<center>entonces</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>ergo</center>
+</td>
+
+<td valign="top" width="40%">
+<center>ergo</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>incluso</center>
+</td>
+
+<td valign="top" width="40%">
+<center>incluso</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>luego</center>
+</td>
+
+<td valign="top" width="40%">
+<center>luego</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>mientras</center>
+</td>
+
+<td valign="top" width="40%">
+<center>mientras</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>porque</center>
+</td>
+
+<td valign="top" width="40%">
+<center>porque</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>pues</center>
+</td>
+
+<td valign="top" width="40%">
+<center>pues</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>que</center>
+</td>
+
+<td valign="top" width="40%">
+<center>que</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>sea</center>
+</td>
+
+<td valign="top" width="40%">
+<center>sea</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>si</center>
+</td>
+
+<td valign="top" width="40%">
+<center>si</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="31%">
+<center>ya</center>
+</td>
+
+<td valign="top" width="40%">
+<center>ya</center>
+</td>
+
+<td valign="top" width="29%">
+<center>CS00</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="numerales"><b><h3>9. NUMERALES</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>NUMERALES</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Numeral</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="11%">
+<center>2</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Cardinal</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Ordinal</center>
+</td>
+
+<td valign="top" width="19%">
+<center>O</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>3</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Género</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Masculino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Femenino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Común</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="11%">
+<center>4</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Número</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Singular</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Plural</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="11%">
+<center>5</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Caso</center>
+</td>
+
+<td valign="top" width="32%">
+<center>-</center>
+</td>
+
+<td valign="top" width="19%">
+<center>0</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" valign="top" width="11%">
+<center>6</center>
+</td>
+
+<td rowspan="3" valign="top" width="37%">
+<center>Función</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Pronominal</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Determinante</center>
+</td>
+
+<td valign="top" width="19%">
+<center>D</center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="32%">
+<center>Adjetivo</center>
+</td>
+
+<td valign="top" width="19%">
+<center>A</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p>
+</p><ul>
+<li><a name="numerales">Los dígitos que corresponden a <i>Caso </i>y <i>Función</i> siempre serán
+0.
+</a><p></p></li><li><a name="numerales">El lema de los numerales que tengan género será el masculino.
+</a><p></p></li><li><a name="numerales">Para las formes apocopadas (primer, tercer) el lema será la forma masculina
+singular plena (primero, tercero).
+</a></li></ul>
+
+<dir>
+<dir><a name="numerales">9.1. Numerales Cardinales</a></dir>
+</dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%"><center><b><font color="#ffffff">Forma</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="38%"><center><b><font color="#ffffff">Lema</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="28%"><center><b><font color="#ffffff">Etiqueta</font></b></center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>catorce</center></td>
+
+<td valign="top" width="38%"><center>catorce</center></td>
+
+<td valign="top" width="28%"><center>MCCP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>cien</center></td>
+
+<td valign="top" width="38%"><center>cien</center></td>
+
+<td valign="top" width="28%"><center>MCCP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>cinco</center></td>
+
+<td valign="top" width="38%"><center>cinco</center></td>
+
+<td valign="top" width="28%"><center>MCCP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>cincuenta</center></td>
+
+<td valign="top" width="38%"><center>cincuenta</center></td>
+
+<td valign="top" width="28%"><center>MCCP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>cuatro</center></td>
+
+<td valign="top" width="38%"><center>cuatro</center></td>
+
+<td valign="top" width="28%"><center>MCCP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>cuatrocientas</center></td>
+
+<td valign="top" width="38%"><center>cuatrocientos</center></td>
+
+<td valign="top" width="28%"><center>MCFP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>cuatrocientos</center></td>
+
+<td valign="top" width="38%"><center>cuatrocientos</center></td>
+
+<td valign="top" width="28%"><center>MCMP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>diez</center></td>
+
+<td valign="top" width="38%"><center>diez</center></td>
+
+<td valign="top" width="28%"><center>MCCP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>doce</center></td>
+
+<td valign="top" width="38%"><center>doce</center></td>
+
+<td valign="top" width="28%"><center>MCCP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>dos</center></td>
+
+<td valign="top" width="38%"><center>dos</center></td>
+
+<td valign="top" width="28%"><center>MCCP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>una</center></td>
+
+<td valign="top" width="38%"><center>uno</center></td>
+
+<td valign="top" width="28%"><center>MCFS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>unas</center></td>
+
+<td valign="top" width="38%"><center>uno</center></td>
+
+<td valign="top" width="28%"><center>MCFP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>uno</center></td>
+
+<td valign="top" width="38%"><center>uno</center></td>
+
+<td valign="top" width="28%"><center>MCFS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>unos</center></td>
+
+<td valign="top" width="38%"><center>uno</center></td>
+
+<td valign="top" width="28%"><center>MCMP00</center></td>
+</tr>
+
+
+</tbody></table></center>
+
+<dir>
+<dir>
+<a name="numerales">9.2. Numerales Ordinales
+</a></dir>
+</dir>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%"><center><b><font color="#ffffff">Forma</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="38%"><center><b><font color="#ffffff">Lema</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="28%"><center><b><font color="#ffffff">Etiqueta</font></b></center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>primer</center></td>
+
+<td valign="top" width="38%"><center>primero</center></td>
+
+<td valign="top" width="28%"><center>MOMS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>primera</center></td>
+
+<td valign="top" width="38%"><center>primero</center></td>
+
+<td valign="top" width="28%"><center>MOFS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>primeras</center></td>
+
+<td valign="top" width="38%"><center>primero</center></td>
+
+<td valign="top" width="28%"><center>MOFP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>primero</center></td>
+
+<td valign="top" width="38%"><center>primero</center></td>
+
+<td valign="top" width="28%"><center>MOMS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>primeros</center></td>
+
+<td valign="top" width="38%"><center>primero</center></td>
+
+<td valign="top" width="28%"><center>MOMP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>segundas</center></td>
+
+<td valign="top" width="38%"><center>segundo</center></td>
+
+<td valign="top" width="28%"><center>MOFP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>segunda</center></td>
+
+<td valign="top" width="38%"><center>segundo</center></td>
+
+<td valign="top" width="28%"><center>MOFS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>segundos</center></td>
+
+<td valign="top" width="38%"><center>segundo</center></td>
+
+<td valign="top" width="28%"><center>MOMP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>segundo</center></td>
+
+<td valign="top" width="38%"><center>segundo</center></td>
+
+<td valign="top" width="28%"><center>MOMS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>tercer</center></td>
+
+<td valign="top" width="38%"><center>tercero</center></td>
+
+<td valign="top" width="28%"><center>MOMS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>terceras</center></td>
+
+<td valign="top" width="38%"><center>tercero</center></td>
+
+<td valign="top" width="28%"><center>MOFP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>tercera</center></td>
+
+<td valign="top" width="38%"><center>tercero</center></td>
+
+<td valign="top" width="28%"><center>MOFS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>terceros</center></td>
+
+<td valign="top" width="38%"><center>tercero</center></td>
+
+<td valign="top" width="28%"><center>MOMP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>tercero</center></td>
+
+<td valign="top" width="38%"><center>tercero</center></td>
+
+<td valign="top" width="28%"><center>MOMS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>últimas</center></td>
+
+<td valign="top" width="38%"><center>último</center></td>
+
+<td valign="top" width="28%"><center>MOFP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>última</center></td>
+
+<td valign="top" width="38%"><center>último</center></td>
+
+<td valign="top" width="28%"><center>MOFS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>últimos</center></td>
+
+<td valign="top" width="38%"><center>último</center></td>
+
+<td valign="top" width="28%"><center>MOMP00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>último</center></td>
+
+<td valign="top" width="38%"><center>último</center></td>
+
+<td valign="top" width="28%"><center>MOMS00</center></td>
+</tr>
+</tbody></table>
+</center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="interjecciones"><b><h3>10. INTERJECCIONES</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>INTERJECCIONES</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%"><center><b>Pos.</b></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Interjección</center>
+</td>
+
+<td valign="top" width="19%">
+<center>I</center>
+</td>
+</tr>
+</tbody></table></center>
+
+
+<p></p><blockquote><a name="interjecciones">Ejemplos:</a></blockquote>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="31%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+</tr>
+
+
+<tr>
+
+<td valign="top" width="34%"><center>ah</center></td>
+
+<td valign="top" width="34%"><center>ah</center></td>
+
+<td valign="top" width="31%"><center>I</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>eh</center></td>
+
+<td valign="top" width="34%"><center>eh</center></td>
+
+<td valign="top" width="31%"><center>I</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>ejem</center></td>
+
+<td valign="top" width="34%"><center>ejem</center></td>
+
+<td valign="top" width="31%"><center>I</center></td>
+</tr>
+<tr>
+<td valign="top" width="34%"><center>ele</center></td>
+
+<td valign="top" width="34%"><center>ele</center></td>
+
+<td valign="top" width="31%"><center>I</center></td>
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="abreviaturas"><b><h3>11. ABREVIATURAS</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>ABREVIATURAS</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center><center><b>Pos.</b></center></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center></td>
+
+
+
+<td valign="top" width="32%">
+<center>Abreviatura</center>
+</td>
+
+<td valign="top" width="19%">
+<center>Y</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p></p><blockquote><a name="abreviaturas">Ejemplos:</a></blockquote>
+
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%"><center><b><font color="#ffffff">Forma</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="34%"><center><b><font color="#ffffff">Lema</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="31%"><center><b><font color="#ffffff">Etiqueta</font></b></center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>entlo</center></td>
+
+<td valign="top" width="34%"><center>entlo</center></td>
+
+<td valign="top" width="31%"><center>Y</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>etc</center></td>
+
+<td valign="top" width="34%"><center>etc</center></td>
+
+<td valign="top" width="31%"><center>Y</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>ej</center></td>
+
+<td valign="top" width="34%"><center>ej</center></td>
+
+<td valign="top" width="31%"><center>Y</center></td>
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="preposiciones"><b><h3>12. PREPOSICIONES</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>PREPOSICIONES</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center><center><b>Pos.</b></center></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Adposición</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+
+</tr><tr>
+<td valign="top" width="12%">
+<center>2</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Tipo</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Preposición</center>
+</td>
+
+<td valign="top" width="19%">
+<center>P</center>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2" valign="top" width="12%">
+<center>3</center>
+</td>
+
+<td rowspan="2" valign="top" width="37%">
+<center>Forma</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Simple</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+
+</tr><tr>
+<td valign="top" width="32%">
+<center>Contraída</center>
+</td>
+
+<td valign="top" width="19%">
+<center>C</center>
+</td>
+
+</tr><tr>
+<td valign="top" width="12%">
+<center>3</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Género</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Masculino</center>
+</td>
+
+<td valign="top" width="19%">
+<center>M</center>
+</td>
+
+</tr><tr>
+<td valign="top" width="12%">
+<center>4</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Número</center>
+</td>
+
+<td valign="top" width="32%">
+<center>Singular</center>
+</td>
+
+<td valign="top" width="19%">
+<center>S</center>
+</td>
+
+</tr>
+</tbody></table></center>
+
+
+<p></p><blockquote><a name="preposiciones">Ejemplos:</a></blockquote>
+<center><table width="375">
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Forma</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Lema</font></b></center></td>
+
+<td bgcolor="#000066" valign="top" width="31%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center></td>
+</tr>
+
+
+<tr>
+
+<td valign="top" width="34%"><center>al</center></td>
+<td valign="top" width="34%"><center>al</center></td>
+<td valign="top" width="31%"><center>SPCMS</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>del</center></td>
+
+<td valign="top" width="34%"><center>del</center></td>
+
+<td valign="top" width="31%"><center>SPCMS</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>a</center></td>
+
+<td valign="top" width="34%"><center>a</center></td>
+
+<td valign="top" width="31%"><center>SPS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>ante</center></td>
+
+<td valign="top" width="34%"><center>ante</center></td>
+
+<td valign="top" width="31%"><center>SPS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>bajo</center></td>
+
+
+<td valign="top" width="34%"><center>bajo</center></td>
+
+<td valign="top" width="31%"><center>SPS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>cabe</center></td>
+
+<td valign="top" width="34%"><center>cabe</center></td>
+
+<td valign="top" width="31%"><center>SPS00</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>con</center></td>
+
+<td valign="top" width="34%"><center>con</center></td>
+
+<td valign="top" width="31%"><center>SPS00</center></td>
+
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+</p><hr>
+<a name="signos"><b><h3>13. SIGNOS DE PUNTUACIÓN</h3></b>
+</a><center><table border="1" width="377">
+<tbody><tr>
+<td colspan="4" bgcolor="#ffffff" valign="top">
+<center><b>SIGNOS DE PUNTUACIÓN</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center><center><b>Pos.</b></center></center></td>
+
+<td valign="top" width="37%">
+<center><b>Atributo</b></center>
+</td>
+
+<td valign="top" width="32%">
+<center><b>Valor</b></center>
+</td>
+
+<td valign="top" width="19%">
+<center><b>Código</b></center>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="12%">
+<center>1</center>
+</td>
+
+<td valign="top" width="37%">
+<center>Categoría</center></td>
+
+
+
+<td valign="top" width="32%">
+<center>Puntuación</center>
+</td>
+
+<td valign="top" width="19%">
+<center>F</center>
+</td>
+</tr>
+</tbody></table></center>
+
+<p></p><blockquote><a name="signos">Ejemplos:</a></blockquote>
+
+<center><table width="375">
+
+<tbody><tr>
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Forma</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="34%">
+<center><b><font color="#ffffff">Lema</font></b></center>
+</td>
+
+<td bgcolor="#000066" valign="top" width="31%">
+<center><b><font color="#ffffff">Etiqueta</font></b></center>
+</td>
+
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>¡</center></td>
+
+<td valign="top" width="34%"><center>¡</center></td>
+
+<td valign="top" width="31%"><center>Faa</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>!</center></td>
+
+<td valign="top" width="34%"><center>!</center></td>
+
+<td valign="top" width="31%"><center>Fat</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>,</center></td>
+
+<td valign="top" width="34%"><center>,</center></td>
+
+<td valign="top" width="31%"><center>Fc</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>[</center></td>
+
+<td valign="top" width="34%"><center>[</center></td>
+
+<td valign="top" width="31%"><center>Fca</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>]</center></td>
+<td valign="top" width="34%"><center>]</center></td>
+
+<td valign="top" width="31%"><center>Fct</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>:</center></td>
+
+<td valign="top" width="34%"><center>:</center></td>
+
+<td valign="top" width="31%"><center>Fd</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>"</center></td>
+
+<td valign="top" width="34%"><center>"</center></td>
+
+<td valign="top" width="31%"><center>Fe</center></td>
+</tr>
+
+
+<tr>
+<td valign="top" width="34%"><center>-</center></td>
+
+<td valign="top" width="34%"><center>-</center></td>
+
+<td valign="top" width="31%"><center>Fg</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>/</center></td>
+
+<td valign="top" width="34%"><center>/</center></td>
+
+<td valign="top" width="31%"><center>Fh</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>¿</center></td>
+
+<td valign="top" width="34%"><center>¿</center></td>
+
+<td valign="top" width="31%"><center>Fia</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>?</center></td>
+
+<td valign="top" width="34%"><center>?</center></td>
+
+<td valign="top" width="31%"><center>Fit</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>{</center></td>
+
+<td valign="top" width="34%"><center>{</center></td>
+
+<td valign="top" width="31%"><center>Fla</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>}</center></td>
+
+<td valign="top" width="34%"><center>}</center></td>
+
+<td valign="top" width="31%"><center>Flt</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>.</center></td>
+<td valign="top" width="34%"><center>.</center></td>
+
+<td valign="top" width="31%"><center>Fp</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>(</center></td>
+
+<td valign="top" width="34%"><center>(</center></td>
+
+<td valign="top" width="31%"><center>Fpa</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>)</center></td>
+
+<td valign="top" width="34%"><center>)</center></td>
+
+<td valign="top" width="31%"><center>Fpt</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>«</center></td>
+
+<td valign="top" width="34%"><center>«</center></td>
+
+<td valign="top" width="31%"><center>Fra</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>»</center></td>
+
+<td valign="top" width="34%"><center>»</center></td>
+
+<td valign="top" width="31%"><center>Frc</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>...</center></td>
+
+<td valign="top" width="34%"><center>...</center></td>
+
+<td valign="top" width="31%"><center>Fs</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>%</center></td>
+
+<td valign="top" width="34%"><center>%</center></td>
+
+<td valign="top" width="31%"><center>Ft</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>;</center></td>
+
+<td valign="top" width="34%"><center>;</center></td>
+
+<td valign="top" width="31%"><center>Fx</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>_</center></td>
+<td valign="top" width="34%"><center>_</center></td>
+<td valign="top" width="31%"><center>Fz</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>+</center></td>
+
+<td valign="top" width="34%"><center>+</center></td>
+
+<td valign="top" width="31%"><center>Fz</center></td>
+</tr>
+
+<tr>
+<td valign="top" width="34%"><center>=</center></td>
+
+<td valign="top" width="34%"><center>=</center></td>
+
+<td valign="top" width="31%"><center>Fz</center></td>
+</tr>
+</tbody></table></center>
+
+<p align="right"><a href="#%EDndice">índice</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><p>
+
+
+</p></body></html>

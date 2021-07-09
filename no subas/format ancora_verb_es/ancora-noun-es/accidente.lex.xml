@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 
+
+  ancoralex-2.0.3
+       
+			Copyright (C) 2007,2008,2009,2010,2011 CLiC - UB
+			Centre de Llenguatge i Computació - Universitat de Barcelona
+ 
+  This file is part of ancoralex-2.0.3.
+ 
+  ancoralex-2.0.3 is free software and data: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published
+  by the Free Software Foundation, either version 3 of the License,
+  or (at your option) any later version.
+
+  ancoralex-2.0.3 is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with ancoralex-2.0.3.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ 
+  Check a text in catalan explaining the terms of the license at http://www.softcatala.cat/wiki/GPL3.
+  In spanish at http://www.viti.es/gnu/licenses/gpl.html
+  
+  The following paper must be cited when using verb lexicon: 
+
+ * Aparicio, Juan, Mariona Taulé, M.Antònia Martí (2008) 'AnCora-Verb: A Lexical Resource for 
+   the Semantic Annotation of Corpora'. Proceedings of 6th International Conference on Language 
+   Resources and Evaluation. Marrakesh (Morocco).
+
+  The following paper must be cited when using noun lexicon: 
+
+ * Peris, Aina, Mariona Taulé (2011). AnCora-Nom: A Spanish lexicon of deverbal nominalizations. 
+   Procesamiento del Lenguaje Natural, nº46, pp. 11-18.
+ 
+ 
+
+ 
+
+-->
+
+<lexentry lemma="accidente" lng="es" origin="deverbal" type="noun">
+  <sense cousin="no" denotation="result" id="1" lexicalized="no" originlemma="accidentar" originlink="verb.accidentar.1" wordnetsynset="16:05443572">
+    <frame appearsinplural="yes" type="default">
+      <argument argument="arg1" thematicrole="tem">
+        <constituent frequency="5" preposition="de" type="sp"/>
+        <constituent frequency="1" type="s.a"/>
+      </argument>
+      <argument argument="argM" thematicrole="adv">
+        <constituent frequency="1" preposition="de" type="sp"/>
+      </argument>
+      <argument argument="argM" thematicrole="mnr">
+        <constituent frequency="1" type="s.a"/>
+        <constituent frequency="1" preposition="de" type="sp"/>
+      </argument>
+      <argument argument="argM" thematicrole="loc">
+        <constituent frequency="1" preposition="de" type="sp"/>
+      </argument>
+      <specifiers>
+        <constituent frequency="25" postype="article" type="determiner"/>
+        <constituent frequency="18" postype="indefinite" type="determiner"/>
+        <constituent frequency="10" type="void"/>
+        <constituent frequency="3" postype="numeral" type="determiner"/>
+        <constituent frequency="1" postype="z" type="determiner"/>
+      </specifiers>
+      <reference_modifiers>
+        <constituent frequency="17" type="s.a"/>
+        <constituent frequency="10" type="S"/>
+        <constituent frequency="5" preposition="de" type="sp"/>
+        <constituent frequency="1" type="s.a"/>
+        <constituent frequency="1" preposition="con" type="sp"/>
+      </reference_modifiers>
+      <examples>
+        <example file="3LB-CAST/104_c-1.tbf.xml" nodepath="9.4.1.1.1.1.1.0" sentencenodepath="9">Ante unas mil personas , entre ellas la ministra de Ciencia_y_Tecnología , Anna_Birulés , el alcalde de Barcelona , Joan_Clos , la Delegada del Gobierno , Julia_García_Valdecasas , y una nutrida representación del gobierno catalán , Pujol dio un toque de alerta sobre el aumento de <argset><specifier>los</specifier><head>accidentes </head><reference_modifiers>laborales</reference_modifiers></argset>. </example>
+        <example file="3LB-CAST/204_c-6.tbf.xml" nodepath="8.3.1.1.0" sentencenodepath="8">Un hombre de 32 años murió hoy en <argset><specifier>un</specifier><head>accidente </head><reference_modifiers>laboral</reference_modifiers><reference_modifiers>ocurrido en Alcoy ( Alicante )</reference_modifiers></argset>al precipitarse desde una altura aproximada de doce metros de un edificio en construcción , según informaron fuentes sanitarias y sindicales . </example>
+        <example file="3LB-CAST/204_c-6.tbf.xml" nodepath="9.0.1.0" sentencenodepath="9"><argset><specifier>El</specifier><head>accidente </head></argset>se produjo poco antes del mediodía en el número 29 de la calle_Pintor_Cabrera cuando el hombre , identificado como M.L.R. y vecino de Alcoy , estaba trabajando con otro obrero en el inmueble y Ø se precipitó al vacío por causas aún desconocidas . </example>
+        <example file="3LB-CAST/204_c-6.tbf.xml" nodepath="11.0.1.2.1.0.1.3.1.0" sentencenodepath="11">La empresa constructora del inmueble donde se produjo <argset><specifier>el</specifier><head>accidente </head></argset>está registrada en la localidad alicantina de Castalla . </example>
+        <example file="3LB-CAST/d1-2.tbf.xml" nodepath="12.0.4.1.1.1" sentencenodepath="12">Hurley , recién fichado por los Sacramento_Kings , se recupera milagrosamente de <argset><specifier>un</specifier><reference_modifiers>atroz</reference_modifiers><head>accidente </head><argument argument="arg1" function="cn" thematicrole="tem" type="sp">de automóvil</argument></argset>: una vez más se ha demostrado la fuerza tremenda que se esconde bajo esa apariencia enclenque . </example>
+        <example file="3LB-CAST/dc10-13.tbf.xml" nodepath="0.4.1.1.1.1.0.0" sentencenodepath="0">Ya en 1906 la North_American_Review informaba que los muertos en <argset><head>accidentes </head><reference_modifiers>de auto</reference_modifiers></argset>superaban a los de la guerra de Cuba . </example>
+        <example file="3LB-CAST/dc2-0.tbf.xml" nodepath="4.7.1.1.0" sentencenodepath="4">Por_último , por sólo citar un caso más , en España , con ocasión del llamado síndrome tóxico - el envenenamiento de miles de personas que consumieron aceite de colza desnaturalizado - , se achacó la enfermedad a <argset><specifier>un</specifier><head>accidente </head><reference_modifiers>sufrido por aviones norteamericanos portadores de armas biológicas</reference_modifiers></argset>. </example>
+        <example file="3LB-CAST/dc2-1.tbf.xml" nodepath="6.4.0.1.1.2.0.0" sentencenodepath="6">Así , al finalizar la contienda , las únicas víctimas de las armas químicas fueron los pocos soldados que sufrieron <argset><head>accidentes </head></argset>durante el traslado , almacenamiento o manipulación de estos productos , además_de los desgraciados habitantes de la ciudad italiana de Bari , en cuyo puerto fue bombardeado e incendiado un buque estadounidense repleto de proyectiles de gas mostaza . </example>
+        <example file="CESS-CAST-A/10127_20001013.tbf.xml" nodepath="14.3.0.1.0" sentencenodepath="14">Entre las trece posibilidades avanzadas en estos meses por el Gobierno y la Armada se incluían <argset><specifier>un</specifier><head>accidente </head><reference_modifiers>fortuito</reference_modifiers></argset>, una negligencia y un posible sabotaje que en su día se atribuyeron los separatistas chechenes . </example>
+        <example file="CESS-CAST-A/10127_20001013.tbf.xml" nodepath="20.3.1.2.3.1.1.1.1.0.0" sentencenodepath="20">En la reunión de hoy de la comisión , sus miembros examinaron toda la documentación material , técnica y gráfica recogida los últimos días por el buque científico " Akademik_Mstislav_Keldish " en el lugar del <argset><head>accidente </head></argset>. </example>
+        <example file="CESS-CAST-A/10920_20001115.tbf.xml" nodepath="0.0.2.1.1.2.1.1.3.4.1.1.0" sentencenodepath="0">El Gobierno chino ha decidido reforzar las medidas de seguridad en las minas de carbón del país , en las que han muerto 3.400 trabajadores en <argset><specifier>diversos</specifier><head>accidentes </head></argset>en lo que va de año , informa hoy miércoles el " Diario_del_Pueblo " . </example>
+        <example file="CESS-CAST-A/10920_20001115.tbf.xml" nodepath="1.2.2.0.1.2.1.1.0" sentencenodepath="1">La primera medida del Gobierno ha sido obligar a los directores de las explotaciones a informar " de forma rápida " de <argset><specifier>los</specifier><head>accidentes </head><reference_modifiers>ocurridos</reference_modifiers></argset>y a no interferir en las investigaciones de la policía local . </example>
+        <example file="CESS-CAST-A/10920_20001115.tbf.xml" nodepath="5.3.8.0.1.1.0.0" sentencenodepath="5">La oficina regional también inspeccionará las instalaciones de la mina , sus equipos , aparatos , herramientas y seguros de <argset><head>accidente </head></argset>de los trabajadores , que deberán cumplir las leyes nacionales . </example>
+        <example file="CESS-CAST-A/10920_20001115.tbf.xml" nodepath="7.3.1.1.1.1.1.1.4.2.1.0" sentencenodepath="7">La falta de inversión en equipos de seguridad se une a la actitud de los directivos , que obligan a los obreros a trabajar hasta 12 ó 14 horas diarias por salarios de miseria y ocultan a las autoridades <argset><specifier>los</specifier><head>accidentes </head><reference_modifiers>que se producen</reference_modifiers></argset>. </example>
+        <example file="CESS-CAST-A/14713_20001219.tbf.xml" nodepath="2.2.3.3.1.0.0" sentencenodepath="2">El texto sobre el que los Quince alcanzarán mañana una posición común incrementa la responsabilidad de estos organismos y Ø fija indemnizaciones de responsabilidad civil en_caso_de_que Ø sean condenados por <argset><head>accidentes </head></argset>. </example>
+        <example file="CESS-CAST-A/14736_20000618.tbf.xml" nodepath="7.4.1.1.0" sentencenodepath="7">En su fase final , la carrera ha sido neutralizada dos veces consecutivas por <argset><specifier>los</specifier><head>accidentes </head><argument argument="arg1" function="cn" thematicrole="tem" type="sp">de Christian_Fittipaldi ( Lola/Ford ) y Gil_de_Ferran ( Reynard/Honda ) , y Roberto_Moreno</argument></argset>. </example>
+        <example file="CESS-CAST-A/15989_20001221.tbf.xml" nodepath="3.0.3.1.1" sentencenodepath="3">" Ø Fue <argset><specifier>un</specifier><reference_modifiers>lamentable</reference_modifiers><head>accidente </head></argset>" , comentó Gerry_Hunsicker , gerente general del equipo . </example>
+        <example file="CESS-CAST-A/17865_20001223.tbf.xml" nodepath="11.2.2.4.1.0" sentencenodepath="11">Le falló el corazón a los 84 años , pero para doblegar a este atleta hizo_falta que poco antes Ø sufriera <argset><specifier>un</specifier><head>accidente </head><reference_modifiers>de coche</reference_modifiers></argset>en las montañas Pocono_de_Pensilvania que le produjo la rotura de la pierna izquierda y heridas internas , que terminaron por minar su resistencia . </example>
+        <example file="CESS-CAST-A/17865_20001223.tbf.xml" nodepath="26.3.3.1.1" sentencenodepath="26">El futbolista eslovaco estaba de vacaciones en Tailandia cuando Ø sufrió <argset><specifier>un</specifier><reference_modifiers>trágico</reference_modifiers><head>accidente </head></argset>en una visita a las cataratas de la isla de Ko_Samui . </example>
+        <example file="CESS-CAST-A/19061_20000426.tbf.xml" nodepath="3.2.1.0" sentencenodepath="3">El conductor , Antonio_Muñoz_Serrano , que ha sido condenado a una multa de 120.000 pesetas y prohibición de la licencia de circulación durante un año , sufrió <argset><specifier>el</specifier><head>accidente </head></argset>la mañana del 5_de_junio del pasado año cuando Ø conducía su cuadriciclo - cuyo uso requiere solo de la licencia de circulación - , por una travesía de Sant_Boi_de_Llobregat ( Barcelona ) . </example>
+        <example file="CESS-CAST-A/19061_20000426.tbf.xml" nodepath="9.2.2.1.3.1.0.0" sentencenodepath="9">La sentencia subraya que " el índice estadístico anual de <argset><head>accidentes </head><reference_modifiers>de tráfico</reference_modifiers><reference_modifiers>causados por ciclomotores en el interior de núcleo urbano</reference_modifiers></argset>resulta aterrador , según las cifras del Instituto_Catalán_de_Seguridad_Viaria " . </example>
+        <example file="CESS-CAST-A/19061_20000426.tbf.xml" nodepath="10.0.5.4.5.1.0.0" sentencenodepath="10">" Con frecuencia , además , Ø debemos lamentar que las lesiones sufridas por los conductores de tales vehículos - muchas veces jóvenes de 14 a 19 años - son de una extrema gravedad , pues su propio cuerpo es el único chasis protector en_caso_de <argset><head>accidente </head></argset>" , afirma el juez . </example>
+        <example file="CESS-CAST-AA/20751_20000128.tbf.xml" nodepath="5.3.5.2.1.0.1.2.1.1.2.2.1.1.1.1.1.2.2.1.1.1.0.0" sentencenodepath="5">El alcalde de Barcelona , Joan_Clos , ha anunciado hoy que de esa forma " el ayuntamiento quiere preservar y tomar posesión de un espacio muy simbólico , de un patrimonio ciudadano en el techo de la ciudad y en el corazón de un parque natural cuya propiedad ha estado sujeta a <argset><specifier>demasiados</specifier><head>accidentes </head>y espectáculos </argset>" , ha indicado Ø . </example>
+        <example file="CESS-CAST-AA/22163_20000527.tbf.xml" nodepath="7.0.2.1.0" sentencenodepath="7">Sin_embargo , ocurrió <argset><specifier>el</specifier><head>accidente </head></argset>y sus amigos lo abandonaron varias horas herido en la frontera . </example>
+        <example file="CESS-CAST-AA/22163_20000527.tbf.xml" nodepath="8.2.1.1" sentencenodepath="8">Según Borth éste <argset><specifier>el</specifier><reference_modifiers>primer</reference_modifiers><head>accidente </head><reference_modifiers>que ocurre con una persona en muchos años</reference_modifiers></argset>, aunque son frecuentes las pérdidas de ganado que atraviesa fácilmente la línea fronteriza . </example>
+        <example file="CESS-CAST-AA/24984_20000630.tbf.xml" nodepath="5.2.0.1.0" sentencenodepath="5">De_la_Rosa sí estuvo la semana pasada probando en este circuito , pero <argset><specifier>el</specifier><head>accidente </head><reference_modifiers>que sufrió su compañero de equipo en la primera jornada , el holandés Jos_Verstappen ,</reference_modifiers></argset>trastocó todos los planes del equipo Arrows , que tuvo que mandar un coche nuevo desde Inglaterra . </example>
+        <example file="CESS-CAST-AA/8195_20000812.tbf.xml" nodepath="9.0.1.3.0.0" sentencenodepath="9">Comercializar un producto con residuos , " salvo <argset><head>accidente </head></argset>, es poco_menos_que imposible " , insiste Juan_Planelles , gerente de la Sociedad_Agraria_de_Transformación ( SAT ) , que agrupa a 350 agricultores propietarios de 600 hectáreas , con una producción de 100.000 toneladas y una facturación media de 14.000 millones de pesetas , ya_que cada diez días seis técnicos controlan las explotaciones . </example>
+        <example file="CESS-CAST-P/115_20020202.tbf.xml" nodepath="2.2.1.2.1.1.1.0" sentencenodepath="2">El motivo es un pinzamiento en el nervio radial del brazo del guitarrista Rick_Parfitt provocado por <argset><specifier>un</specifier><head>accidente </head><argument argument="argM" function="cn" thematicrole="adv" type="sp">de moto</argument></argset>. </example>
+        <example file="CESS-CAST-P/11_20020902.tbf.xml" nodepath="10.0.0.1.1.0" sentencenodepath="10">Tras <argset><specifier>un</specifier><head>accidente </head></argset>Ø tiró la toalla y Ø se recicló en prolífico compositor y productor . </example>
+        <example file="CESS-CAST-P/143_20011101.tbf.xml" nodepath="0.3.1.1.2.4.0.1.1.1.1.1" sentencenodepath="0">La esquiadora francesa Régine_Cavagnoud , de 31 años , murió ayer en una clínica de Innsbruck ( Austria ) en la que Ø había sido ingresada el pasado Lunes después de sufrir <argset><specifier>un</specifier><reference_modifiers>espectacular</reference_modifiers><head>accidente </head></argset>mientras Ø se entrenaba en el glaciar de Pitztal , en los Alpes . </example>
+        <example file="CESS-CAST-P/20_20010301.tbf.xml" nodepath="2.0.1.0" sentencenodepath="2"><argset><specifier>El</specifier><head>accidente </head></argset>ocurrió a las 6.20 de la mañana en la localidad de Selby , en el condado de North_Yorshire , al noreste de Inglaterra . </example>
+        <example file="CESS-CAST-P/20_20010301.tbf.xml" nodepath="17.0.3.1.1" sentencenodepath="17">" Ø Es <argset><specifier>un</specifier><reference_modifiers>horrible</reference_modifiers><head>accidente </head><reference_modifiers>que ha conmovido a todo el país</reference_modifiers></argset>" , declaró el primer ministro , Tony_Blair , quien al_igual_que la reina Isabel_II envió sus condolencias a los familiares de las víctimas . </example>
+        <example file="CESS-CAST-P/20_20010301.tbf.xml" nodepath="21.2.1.1" sentencenodepath="21">El de ayer es <argset><specifier>el</specifier><reference_modifiers>tercer</reference_modifiers><head>accidente </head><reference_modifiers>ferroviario</reference_modifiers><argument argument="argM" function="cn" thematicrole="mnr" type="s.a">mortal</argument></argset>en Inglaterra en_menos_de dos años . </example>
+        <example file="CESS-CAST-P/26_20000302.tbf.xml" nodepath="1.0.1.0" sentencenodepath="1"><argset><specifier>Un</specifier><head>accidente </head><argument argument="arg1" function="cn" thematicrole="tem" type="s.a">ferroviario</argument></argset>causó ayer 35 muertos en el norte de Marruecos . </example>
+        <example file="CESS-CAST-P/26_20000302.tbf.xml" nodepath="6.0.1.0" sentencenodepath="6"><argset><specifier>El</specifier><head>accidente </head></argset>se produjo después de que el conductor se decidiera a cruzar la vía del tren pese_a la intensa niebla que cubría la zona . </example>
+        <example file="CESS-CAST-P/29_19990802.tbf.xml" nodepath="0.2.1.1.1.1.0" sentencenodepath="0">Tres personas fallecidas y dos heridas es el balance de <argset><specifier>los dos</specifier><head>accidentes </head><reference_modifiers>que se produjeron en la madrugada de ayer como resultado de colisiones contra caballos</reference_modifiers></argset>. </example>
+        <example file="CESS-CAST-P/38_19990902_d.tbf.xml" nodepath="0.2.1.1" sentencenodepath="0">Pujol sufre <argset><specifier>un</specifier><reference_modifiers>pequeño</reference_modifiers><head>accidente </head><argument argument="argM" function="cn" thematicrole="mnr" type="sp">de coche</argument></argset>en la A-7 . </example>
+        <example file="CESS-CAST-P/38_19990902_d.tbf.xml" nodepath="3.0.1.0" sentencenodepath="3"><argset><specifier>El</specifier><head>accidente </head></argset>se saldó sin heridos . </example>
+        <example file="CESS-CAST-P/3_19991101.tbf.xml" nodepath="0.4.4.1.0" sentencenodepath="0">Egypt_Air , compañía estatal creada hace 67 años , aseguró ayer por boca de su presidente , Mohammed_Fahim_Rayan , que Ø nunca habían tenido <argset><specifier>un</specifier><head>accidente </head><reference_modifiers>fatal</reference_modifiers></argset>anteriormente . </example>
+        <example file="CESS-CAST-P/3_19991101.tbf.xml" nodepath="2.4.1.0" sentencenodepath="2">En_realidad , se le atribuyen <argset><specifier>cuatro</specifier><head>accidentes </head><reference_modifiers>mortales</reference_modifiers></argset>. </example>
+        <example file="CESS-CAST-P/3_20020302.tbf.xml" nodepath="8.2.0.2.1.0" sentencenodepath="8">El año pasado , en las rondas de Barcelona se registraron <argset><specifier>610</specifier><head>accidentes </head><argument argument="arg1" function="cn" thematicrole="tem" type="sp">de tráfico</argument></argset>y siete personas perdieron la vida . </example>
+        <example file="CESS-CAST-P/64_19990103.tbf.xml" nodepath="0.5.1.1.0" sentencenodepath="0">El primer fin_de_semana de junio las carreteras catalanas se cobraron 16 vidas en <argset><specifier>ocho</specifier><head>accidentes </head><reference_modifiers>mortales</reference_modifiers></argset>. </example>
+        <example file="CESS-CAST-P/65_20010302.tbf.xml" nodepath="2.2.1.1" sentencenodepath="2">Las centrales sindicales vinculan <argset><specifier>los</specifier><reference_modifiers>numerosos</reference_modifiers><head>accidentes </head></argset>a la precariedad laboral de los empleados de la construcción y al abuso de la subcontratación . </example>
+        <example file="CESS-CAST-P/66_20010302.tbf.xml" nodepath="1.0.1.0" sentencenodepath="1"><argset><specifier>EL</specifier><head>ACCIDENTE </head></argset>se produjo ayer por la tarde en la fábrica que la compañía Atofina , filial de Totalfinaelf , tiene en el municipio . </example>
+        <example file="CESS-CAST-P/67_19990901.tbf.xml" nodepath="7.0.4.2.2.1.1.1.2.1.0" sentencenodepath="7">" Nos hizo mucha ilusión que Barbie no_sólo haya servido de diversión a las niñas , sino_que Ø pueda ayudar a los adultos que hayan sufrido <argset><specifier>un</specifier><head>accidente </head></argset>" , indicó un portavoz de la casa Mattel . </example>
+        <example file="CESS-CAST-P/69_20010201_k.tbf.xml" nodepath="1.3.0.1.2.1.1.1.0" sentencenodepath="1">El beneficio no incluye las cargas excepcionales relacionadas con <argset><specifier>el</specifier><head>accidente </head><argument argument="arg1" function="cn" thematicrole="tem" type="sp">del petrolero Erika</argument></argset>, por valor de 183.024 millones de pesetas , ni ingresos por plusvalías de 49.915 millones . </example>
+        <example file="CESS-CAST-P/69_20010501.tbf.xml" nodepath="11.0.1.0" sentencenodepath="11"><argset><specifier>El</specifier><head>accidente </head><reference_modifiers>más grave</reference_modifiers></argset>tuvo_lugar en la A-7 , en Mont-roig_del_Camp . </example>
+        <example file="CESS-CAST-P/75_20020102.tbf.xml" nodepath="0.0.1.1.3.1.0.0" sentencenodepath="0">Por primera vez desde 1994 , el número de víctimas mortales de todo el año en <argset><head>accidente </head><reference_modifiers>de tráfico</reference_modifiers></argset>descendió en Catalunya , y no poco : un 11% , en comparación con el 2000 . </example>
+        <example file="CESS-CAST-P/75_20020102.tbf.xml" nodepath="3.5.1.1.2.3.1.0" sentencenodepath="3">Así , ayer , en los paneles informativos de diversas vías importantes , Trànsit incluyó un mensaje : " Entre todos Ø hemos reducido <argset><specifier>los</specifier><head>accidentes </head></argset>. Gracias por su ayuda " . </example>
+        <example file="CESS-CAST-P/77_20010502.tbf.xml" nodepath="8.0.1.0.1.1.0.0" sentencenodepath="8">Momentos antes del <argset><head>accidente </head></argset>, varios ocupantes hicieron comentarios acerca_del exceso de velocidad . </example>
+        <example file="CESS-CAST-P/77_20010502.tbf.xml" nodepath="11.2.1.1.1.1.0" sentencenodepath="11">Fuentes del Tanatorio_de_Valdepeñas informaron de que en <argset><specifier>el</specifier><head>accidente </head></argset>fallecieron Daniel_Guzmán_Manzano , de 24 años ; la estadounidense Dayna_Gray , de 24 ; Begoña_González_Galán , de 27 , y cuya madre resultó herida , y Mohamed_Tazin y su hijo Alica , de 13 . </example>
+        <example file="CESS-CAST-P/78_20010502.tbf.xml" nodepath="0.3.1.0" sentencenodepath="0">ESTE AÑO SE HAN REGISTRADO <argset><specifier>OCHO</specifier><head>ACCIDENTES </head><reference_modifiers>CON AUTOBUSES IMPLICADOS</reference_modifiers></argset>. </example>
+        <example file="CESS-CAST-P/79_19990302.tbf.xml" nodepath="2.0.1.0" sentencenodepath="2"><argset><specifier>El</specifier><head>accidente </head><reference_modifiers>que causó la muerte de una niña en el cruce de la calle de Aragó con el paseo de Gràcia , frente_al antiguo Fashion_Café ,</reference_modifiers></argset>se ha saldado con una multa de 120.000 pesetas , un año de retirada del carnet y una indemnización de 19,7 millones de pesetas . </example>
+        <example file="CESS-CAST-P/79_19990302.tbf.xml" nodepath="8.2.1.1.0" sentencenodepath="8">La magistrada descarta que <argset><specifier>el</specifier><head>accidente </head></argset>se produjera por cualquier otra causa " que no fuera el descontrol del vehículo " . </example>
+        <example file="CESS-CAST-P/79_19990302.tbf.xml" nodepath="11.0.1.0" sentencenodepath="11"><argset><specifier>El</specifier><head>accidente </head></argset>originó una agria polémica , después de que el juez de guardia Ramon_Gomis , que practicó el levantamiento del cadáver de la niña , atribuyera el atropello a un despiste del conductor producido por un sugestivo anuncio de lencería femenina que se exhibía en el escaparate del desaparecido restaurante Fashion_Café . </example>
+        <example file="CESS-CAST-P/87_19990701.tbf.xml" nodepath="2.4.1.1.0" sentencenodepath="2">Lady_Di , Dodi_al_Fayed y Henri_Paul , el conductor , murieron en París el 31_de_agosto_de_1997 en <argset><specifier>un</specifier><head>accidente </head><reference_modifiers>de coche</reference_modifiers></argset>. </example>
+        <example file="CESS-CAST-P/91_20010301.tbf.xml" nodepath="3.3.0.6.4.0.1.1.1" sentencenodepath="3">En_definitiva , el CAC reclama que no se convierta un hecho luctuoso en un espectáculo para los televidentes , como Ø ocurrió en <argset><specifier>el</specifier><reference_modifiers>reciente</reference_modifiers><head>accidente </head><argument argument="arg1" function="cn" thematicrole="tem" type="sp">de autocar</argument><argument argument="argM" function="cn" thematicrole="loc" type="sp">de Golmayo ( Soria )</argument></argset>o tras el descubrimiento de los cuerpos de las niñas de Alcàsser , y que se respete el derecho a la privacidad de las víctimas y de sus familiares . </example>
+      </examples>
+    </frame>
+  </sense>
+  <sense cousin="no" denotation="underspecified" id="2" lexicalized="no" originlemma="accidentar" originlink="verb.accidentar.1" wordnetsynset="16:05443572">
+    <frame appearsinplural="no" type="default">
+      <argument argument="arg1" thematicrole="tem">
+        <constituent frequency="1" postype="possessive" type="determiner"/>
+        <constituent frequency="2" preposition="de" type="sp"/>
+      </argument>
+      <argument argument="argM" thematicrole="mnr">
+        <constituent frequency="1" type="s.a"/>
+      </argument>
+      <specifiers>
+        <constituent frequency="1" type="void"/>
+        <constituent frequency="2" postype="article" type="determiner"/>
+        <constituent frequency="1" postype="possessive" type="determiner"/>
+      </specifiers>
+      <reference_modifiers>
+        <constituent frequency="2" type="s.a"/>
+        <constituent frequency="1" type="S"/>
+      </reference_modifiers>
+      <examples>
+        <example file="CESS-CAST-A/18964_20000923.tbf.xml" nodepath="10.0.3.1.1.0" sentencenodepath="10">Fullana , que milita en el Specialized y cuyo entrenador es el ex ciclista holandés Gert_Jan_Theunisse , perdió un tiempo importantísimo tras <argset><argument argument="arg1" thematicrole="tem" type="spec">su</argument><head>accidente </head></argset>; la italiana abrió hueco y Blatter enlazó desde atrás , superando a Marga en la quinta y última ronda . </example>
+        <example file="CESS-CAST-P/20_20010301.tbf.xml" nodepath="3.2.1.0.1" sentencenodepath="3">Se trata del <argset><reference_modifiers>segundo</reference_modifiers><head>accidente </head><argument argument="argM" function="cn" thematicrole="mnr" type="s.a">mortal</argument><reference_modifiers>que se produce en la línea ferroviaria de la costa este en los últimos seis meses</reference_modifiers></argset>. </example>
+        <example file="CESS-CAST-P/66_19990601.tbf.xml" nodepath="20.0.1.1" sentencenodepath="20"><argset><specifier>El</specifier><reference_modifiers>último</reference_modifiers><head>accidente </head><argument argument="arg1" function="cn" thematicrole="tem" type="sp">del suburbano madrileño</argument></argset>se remonta a agosto_de_1997 , cuando nueve personas resultaron levemente heridas al invertir una escalera mecánica el sentido de su marcha . </example>
+        <example file="CESS-CAST-P/85_20010103.tbf.xml" nodepath="16.5.1.1.1.0" sentencenodepath="16">En Ciutat_Vella la recogida también se vio afectada por <argset><specifier>el</specifier><head>accidente </head><argument argument="arg1" function="cn" thematicrole="tem" type="sp">de un camión de basuras en_dirección_a Barcelona</argument></argset>. </example>
+      </examples>
+    </frame>
+  </sense>
+</lexentry>
