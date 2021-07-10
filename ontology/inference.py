@@ -84,6 +84,17 @@ semantic_restrictions = {
     'substance': wn.synset('substance.n.01'),
 }
 
+""" DIFERENTE GRANULARIDAD DE WN y SUMO
+natural_object.n.01 ['Artifact']
+electrical_discharge.n.01 ['Radiating']
+physical_phenomenon.n.01 ['IntentionalProcess']
+
+> car.n.01 ['Automobile']
+> motor_vehicle.n.01 ['Automobile']
+> whole.n.02 ['CorpuscularObject']
+event.n.01 ['Process']
+"""
+
 
 def hypo(synset, max_level=None, level=0):
     """
@@ -108,7 +119,6 @@ def get_verb_roots():
     root_hypernyms_of_verbs = Counter(chain(*[synset.root_hypernyms() for synset in wn.all_synsets(pos='v')]))
     print(root_hypernyms_of_verbs.most_common(10))
     return root_hypernyms_of_verbs.keys()  # This will return all root_hypernyms.
-
 
 
 def format_implication(tuples):
@@ -272,15 +282,3 @@ if __name__ == "__main__":
     # subgraphs = [list(ig.nodes.keys())[:4], list(ig.nodes.keys())[4:10]]
     # formatted = ig.dot_graph_subgraph_format(subgraphs)
     # ig.visualize_string(formatted)
-
-
-""" WN -> SUMO ¿¿??
-natural_object.n.01 ['Artifact']
-electrical_discharge.n.01 ['Radiating']
-physical_phenomenon.n.01 ['IntentionalProcess']
-
-> car.n.01 ['Automobile']
-> motor_vehicle.n.01 ['Automobile']
-> whole.n.02 ['CorpuscularObject']
-event.n.01 ['Process']
-"""

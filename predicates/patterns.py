@@ -4,7 +4,7 @@ import re
 
 # MÍOS
 import predicates.morphology as morphology
-import predicates.semantics as semantics
+import ontology.semantics as semantics
 
 """ incongruencias copulativas
 ROOT atributo

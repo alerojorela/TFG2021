@@ -22,7 +22,23 @@ wordnet_inference_edges = [
     # (wn.synset(''), wn.synset('')),
 ]
 
-# wordnet entailments. sólo para verbos
-# entailment_tuples = [(synset, ent) for synset in wn.all_synsets(pos='v') for ent in synset.entailments()]
-# print(entailment_tuples)
+""" wordnet entailments. sólo para verbos
+entailment_tuples = [(synset, ent) for synset in wn.all_synsets(pos='v') for ent in synset.entailments()]
+print(entailment_tuples)
+"""
 
+
+"""
+    [print(synset.name(), synset.lemma_names(), synset.definition()) for synset in wn.synsets('author')]
+    [print(synset.name(), synset.lemma_names(), synset.definition()) for synset in wn.synsets('book')]
+    writer.n.01 ['writer', 'author'] writes (books or stories or articles or the like) professionally (for pay)
+    author.v.01 ['author'] be the author of
+    book.n.01 ['book'] a written work or composition that has been published (printed on pages bound together)
+    book.n.02 ['book', 'volume'] physical objects consisting of a number of pages bound together
+"""
+qualia = {
+    'book.n.01': {
+        'agentive': 'writer.n.01',
+        'telic': 'read.n.01',
+    },
+}

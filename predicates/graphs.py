@@ -19,7 +19,7 @@ import graph  # basic graph
 import utils.functions as functions
 import predicates
 import predicates.morphology as morphology
-import predicates.semantics as semantics
+import ontology.semantics as semantics
 import ontology.extensionKB
 
 
@@ -789,7 +789,7 @@ class SemanticGraph(MyGraph):
 
     def base_graph(self, text):
         # visualiza_pasos = True
-        # visualiza_pasos = False
+        visualiza_pasos = False
 
         # ----------------------------------------------------
         # [1] adaptación del grafo de Spacy a la clase MyGraph
@@ -809,11 +809,8 @@ class SemanticGraph(MyGraph):
             elif node.properties['lemma'] != node.properties['old_lemma']:
                 print('lematización distinta:', node.properties['lemma'], '\t'*3, node.properties)
 
-        # if visualiza_pasos: graph_doc.visualize()
-
         # ------------------------------
         # [2] segmentación de la flexión
-
         def get_flex_tag(flex, lemma):
             # dos modos de presentación
             #   a) PROG.PRS.IND
@@ -1007,9 +1004,6 @@ class SemanticGraph(MyGraph):
                         self.reverse_edge(edge)
 
         if visualiza_pasos: self.visualize()
-
-
-
 
     def deambiguation(self):
         # A IMPLEMENTAR, es uno de las tareas más complejas

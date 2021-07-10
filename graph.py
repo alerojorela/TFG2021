@@ -4,6 +4,7 @@
 Clase básica para definir grafos y operaciones básicas con ellos
 """
 import sys
+# for web
 import urllib.parse
 import webbrowser
 graphviz_website = 'https://dreampuf.github.io/GraphvizOnline/#%s'
@@ -109,7 +110,6 @@ class Graph:
 
 
     def search_edges(self, start=None, end=None):
-        # start
         if start is not None and end is not None:
             return [_ for _ in self.edges.keys() if _.start == start and _.end == end]
         elif start is not None:
@@ -120,7 +120,6 @@ class Graph:
             return self.edges.keys()
 
     def search_nodes(self, start=None, end=None):
-        # start
         if start is not None or end is not None:
             edges = self.search_edges(start, end)
             nodes = []
@@ -147,11 +146,6 @@ class Graph:
 
     def isolated_nodes(self):
         return self.root_nodes().intersection(self.leave_nodes()) 
-
-    # def start_nodes(self, node):
-    #     return self.search_nodes(end=node)
-    # def end_nodes(self, node):
-    #     return self.search_nodes(start=node)
 
     # for trees, one parent only
     def head(self, node):
