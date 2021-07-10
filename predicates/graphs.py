@@ -788,7 +788,7 @@ class SemanticGraph(MyGraph):
         }
 
     def base_graph(self, text):
-        visualiza_pasos = True
+        # visualiza_pasos = True
         # visualiza_pasos = False
 
         # ----------------------------------------------------
@@ -869,7 +869,7 @@ class SemanticGraph(MyGraph):
                     text = '.'.join(flex_TAM) 
                     print('segmentación FLEX:', aux_node.properties['text'], node.properties['text'], '->', text)
 
-                    aux_node.properties.update({'FLEX'})
+                    aux_node.properties.update({'FLEX': flex_TAM})
                     aux_node.label = label
             else:  # crea un elemento FLEX
                 flex = morphology.get_flex_info(node.properties['text'], node.properties['lemma'])

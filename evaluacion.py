@@ -4,17 +4,17 @@ import re
 
 
 
-""" DIFÍCILES
-        'Pagué religiosamente lo que marcaba el taxímetro al taxista',
-        'Pagué religiosamente al taxista lo que marcaba el taxímetro',
-        'El superintendente, extraordinariamente disminuido por el susto, es hallado en el atolón de Mururoa.'
-        'Saldremos cuando acabe de llover',
+""" por ver
+    'Pagué religiosamente lo que marcaba el taxímetro al taxista',
+    'Pagué religiosamente al taxista lo que marcaba el taxímetro',
+    'El superintendente, extraordinariamente disminuido por el susto, es hallado en el atolón de Mururoa.'
+    'Saldremos cuando acabe de llover',
 
-        'Cocino cuanto puedo',
-        'No conduzcas si bebes',
-        'Iré aunque llueva',
-        'Vengo para que rematemos el trabajo',
-        'Vino para arreglar la puerta',
+    'Cocino cuanto puedo',
+    'No conduzcas si bebes',
+    'Iré aunque llueva',
+    'Vengo para que rematemos el trabajo',
+    'Vino para arreglar la puerta',
 """
 
 
@@ -227,102 +227,60 @@ pruebas2 = {
 oraciones_evaluacion = [
     'Todo esto le parece mágico.',
     '✅Razones no le faltan.',
-    # '✅Él lo sabe.',
-    # '✅Los asistentes quedaron atónitos.',
-    # # 'Incremento de la polarizabilidad molecular.',
-    # 'Junto a él han surgido otros no menos importantes.',
-    # 'De esa oposición extrema baste aquí una muestra.',
-    #
-    # '✅Ahora también los produce.',
-    # '✅La situación es muy grave.',
-    # 'Es una tragedia.',
-    # '✅Un balazo lo derribó en el suelo.',
-    # '✅No murió en el acto.',  # es compleja
-    # '✅La vida aquí es muy divertida.',
-    # '✅Leipzig es una ciudad con mucha marcha.',
-    # '✅Constantemente abren nuevos bares.',
-    # '✅Que luego cierran.',
-    # 'Es cierto que las viviendas son malas.',  # "Es cierto"
-    # 'Su mujer procede de la vecina Sajonia-Anhalt.',
-    # 'Cuando lo pusieron en libertad escapó.',  # FRASEOLOGÍA "poner en libertad"
-    # 'La granja se encuentra en un estado desastroso.',
-    # '✅Sus motivos son de orden económico.',
-    # '✅Al principio todo fue difícil.',  # fixed 'al principio'
-    # '✅Más tarde se mudó mi mujer.',
-    # '✅Son las cinco de la mañana.',
-    # '✅Los encierros de este pueblo son peculiares.',
-    # 'Desde hace días están concentrados.',
-    # 'Con el personal me llevo bien.',  # sujeto relegado CON
-    # 'Es difícil acostumbrarse a un nuevo sistema.',
-    # '✅La política industrial ha cambiado.',
-    # '✅La vuelta está prevista para el día 1 de junio.',  # compound
-    # '✅Yo soy partidario de cumplir la ley.',
-    # 'Pero en pocos días se ha caído todo.',
-    # '✅Tenía carisma.',
-    # 'Hoy la reubicación del ex ministro no resulta fácil.',
-    # '✅No sucedió.',
-    # '✅No se inmutó.',
-    # '✅Nadie lo entendió.',
-    # '✅Pero volvió a perder.',  # <<<<<<<<<<<<<<<
-    # 'También para ella pasaban los años.',
-    # 'Era una flor de ayer.',
-    # 'Ella misma estaba sorprendida de su obediencia.',
-    # '✅No se arrepentirá.',
-    # 'Ya no le quedaban fuerzas ni para arrepentirse.',
-    # '✅Me las enseñó usted.',
-    # '✅Es cierto.',
-    # '✅No esperó su respuesta.',
-    # '✅El Bósforo comunica mi infancia con mi muerte.',
-    # 'En el Bósforo siempre hace sol.',  # hacer+hecho meteorológico y SIEMPRE
-    # 'El embalse de agua.',
-    # '✅Entiende de vientos.',
-    # '✅Soy marino.',
-    # '✅Nunca he salido de Trinidad.',
+    '✅Él lo sabe.',
+    '✅Los asistentes quedaron atónitos.',
+    # 'Incremento de la polarizabilidad molecular.',
+    'Junto a él han surgido otros no menos importantes.',
+    'De esa oposición extrema baste aquí una muestra.',
+
+    '✅Ahora también los produce.',
+    '✅La situación es muy grave.',
+    'Es una tragedia.',
+    '✅Un balazo lo derribó en el suelo.',
+    '✅No murió en el acto.',  # es compleja
+    '✅La vida aquí es muy divertida.',
+    '✅Leipzig es una ciudad con mucha marcha.',
+    '✅Constantemente abren nuevos bares.',
+    '✅Que luego cierran.',
+    'Es cierto que las viviendas son malas.',  # "Es cierto"
+    'Su mujer procede de la vecina Sajonia-Anhalt.',
+    'Cuando lo pusieron en libertad escapó.',  # FRASEOLOGÍA "poner en libertad"
+    'La granja se encuentra en un estado desastroso.',
+    '✅Sus motivos son de orden económico.',
+    '✅Al principio todo fue difícil.',  # fixed 'al principio'
+    '✅Más tarde se mudó mi mujer.',
+    '✅Son las cinco de la mañana.',
+    '✅Los encierros de este pueblo son peculiares.',
+    'Desde hace días están concentrados.',
+    'Con el personal me llevo bien.',  # sujeto relegado CON
+    'Es difícil acostumbrarse a un nuevo sistema.',
+    '✅La política industrial ha cambiado.',
+    '✅La vuelta está prevista para el día 1 de junio.',  # compound
+    '✅Yo soy partidario de cumplir la ley.',
+    'Pero en pocos días se ha caído todo.',
+    '✅Tenía carisma.',
+    'Hoy la reubicación del ex ministro no resulta fácil.',
+    '✅No sucedió.',
+    '✅No se inmutó.',
+    '✅Nadie lo entendió.',
+    '✅Pero volvió a perder.',  # <<<<<<<<<<<<<<<
+    'También para ella pasaban los años.',
+    'Era una flor de ayer.',
+    'Ella misma estaba sorprendida de su obediencia.',
+    '✅No se arrepentirá.',
+    'Ya no le quedaban fuerzas ni para arrepentirse.',
+    '✅Me las enseñó usted.',
+    '✅Es cierto.',
+    '✅No esperó su respuesta.',
+    '✅El Bósforo comunica mi infancia con mi muerte.',
+    'En el Bósforo siempre hace sol.',  # hacer+hecho meteorológico y SIEMPRE
+    'El embalse de agua.',
+    '✅Entiende de vientos.',
+    '✅Soy marino.',
+    '✅Nunca he salido de Trinidad.',
 ]
 
-""" http://universal.elra.info/product_info.php?cPath=42_43&products_id=1509
-CESS-ESP Spanish Corpus
-This corpus contains 188,650 words of Spanish which have been syntactically annotated within the framework of the CESS-ECE project (Syntactically & Semantically Annotated Corpora, Spanish, Catalan, Basque). Different types of resources were created:
 
-- CESS-ESP: the syntactically annotated version.
-- AnCora-ESP: the semantically annotated version.
-- AnCora-LEX-ESP: a verbal lexicon (1869 entries).
-- AnCora-DEP-ESP: annotated with dependencies.
-
-The CESS-ESP, which is at core here, was annotated using constituents and functions (with AGTK, University of Pennsylvania). 
-"""
-
-
-def get_corpus_sentences():
-    # NLTK CESS ESP
-    from nltk.corpus import cess_esp as cess
-
-    # Read the corpus into a list,
-    # each entry in the list is one sentence.
-    # cess_sents = cess.tagged_sents()
-    # sent = cess_sents[0:50]
-    sentences = cess.sents()  # [0:100]
-    for sentence in sentences:
-        if len(sentence) < 10:
-            print(' '.join(sentence))
-
-
-# def get_sentences(section=None, exclude_checked=False, data=pruebas):
-#     sentences = []
-#
-#     if section is None or section == '':
-#         sections = list(data.keys())
-#     else:
-#         sections = [section]
-#
-#     for key in sections:
-#         if exclude_checked:
-#             sentences.extend([s for s in data[key] if s[0] != '✅'])
-#         else:
-#             sentences.extend([s[1:] if s[0] == '✅' else s for s in data[key]])
-#
-#     return sentences
-#     text = '. '.join(sentences)
 
 def get_sentences(section, data, exclude_checked=False):
     if section:
@@ -351,10 +309,35 @@ def count_checked_members(data):
     print(f'Evaluación positiva de {len(checked_members)} oraciones y negativa de {len(unchecked_members)} oraciones')
 
 
+def get_corpus_sentences():
+    """ http://universal.elra.info/product_info.php?cPath=42_43&products_id=1509
+    CESS-ESP Spanish Corpus
+    This corpus contains 188,650 words of Spanish which have been syntactically annotated within the framework of the CESS-ECE project (Syntactically & Semantically Annotated Corpora, Spanish, Catalan, Basque). Different types of resources were created:
+
+    - CESS-ESP: the syntactically annotated version.
+    - AnCora-ESP: the semantically annotated version.
+    - AnCora-LEX-ESP: a verbal lexicon (1869 entries).
+    - AnCora-DEP-ESP: annotated with dependencies.
+
+    The CESS-ESP, which is at core here, was annotated using constituents and functions (with AGTK, University of Pennsylvania).
+    """
+    # NLTK CESS ESP
+    from nltk.corpus import cess_esp as cess
+
+    # Read the corpus into a list,
+    # each entry in the list is one sentence.
+    # cess_sents = cess.tagged_sents()
+    # sent = cess_sents[0:50]
+    sentences = cess.sents()  # [0:100]
+    for sentence in sentences:
+        if len(sentence) < 10:
+            print(' '.join(sentence))
+
+
 if __name__ == "__main__":
     from main import run
 
     # ----------------- Evaluación -----------------
     for sent in filter_checked_members(oraciones_evaluacion, exclude_checked=True):
-        run(sent, coreference=False, inference=True)
+        run(sent, coreference=False, inference=False)
     count_checked_members(oraciones_evaluacion)

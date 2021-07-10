@@ -21,19 +21,6 @@ import predicates
 import ontology
 
 
-def prueba_spacy(text):
-    complexity = 1
-    if complexity == 0:
-        nlp = spacy.load("es_core_news_sm")
-    elif complexity == 1:  # más pesado:
-        nlp = spacy.load("es_dep_news_trf")
-    elif complexity == 2:
-        nlp = spacy.load("es_core_news_lg")
-
-    doc = nlp(text)
-    explacy.print_parse_info(nlp, text)
-    sys.exit(0)
-
 
 def run(text, coreference=True, inference=True):
     # sg = graphs.SemanticGraph(text, pattern_source)
@@ -128,79 +115,3 @@ if __name__ == "__main__":
     sys.exit(0)
 
 
-
-""" spacy.tokens.Token
-    [SÍ] i	The index of the token within the parent document. 
-        doc[i] 
-        16)abismo < 13)saturno >  <22)hollar> 	patrón[N N COP]
-        TENER-cuyo < 16)abismo 18)fondo >  <13)saturno 22)hollar> 	patrón[TENER-cuyo]
-
-    [NO] idx	The character offset of the token within the parent document.
-    int
-    lex_id	Sequential ID of the token’s lexical type, used to index into tables, e.g. for word vectors. 
-        TENER-cuyo < 1|18446744073709551615|vecina 3|18446744073709551615|casa >  <4|18446744073709551615|arder> 
-
-    [SÍ] _	User space for adding custom attribute extensions. 
-
-    [NO] tag_	Fine-grained part-of-speech. 
-        16|NOUN|abismo < 13|PROPN|saturno >  <22|VERB|hollar> 	patrón[N N COP]
-        TENER-cuyo < 16|NOUN|abismo 18|NOUN|fondo >  <13|PROPN|saturno 22|VERB|hollar> 	patrón[TENER-cuyo]
-
-    is_oov	Is the token out-of-vocabulary (i.e. does it not have a word vector)? 
-    like_num	Does the token represent a number? e.g. “10.9”, “10”, “ten”, etc. 
-
-    ENT
-        ent_type	Named entity type.
-        int
-        ent_type_	Named entity type.
-        str
-        ent_iob	IOB code of named entity tag. 3 means the token begins an entity, 2 means it is outside an entity, 1 means it is inside an entity, and 0 means no entity tag is set.
-        int
-        ent_iob_	IOB code of named entity tag. “B” means the token begins an entity, “I” means it is inside an entity, “O” means it is outside an entity, and "" means no entity tag is set.
-        str
-        ent_kb_id 	Knowledge base ID that refers to the named entity this token is a part of, if any.
-        int
-        ent_kb_id_ 	Knowledge base ID that refers to the named entity this token is a part of, if any.
-        str
-        ent_id	ID of the entity the token is an instance of, if any. Currently not used, but potentially for coreference resolution.
-        int
-        ent_id_	ID of the entity the token is an instance of, if any. Currently not used, but potentially for coreference resolution.
-        str
-
-    lex v3.0 The underlying lexeme. 
-        Lexeme.vector 
-            ValueError: [E010] Word vectors set to length 0. This may be because you don't have a model installed or loaded, or because your model doesn't include word vectors. For more info, see the docs:
-            https://spacy.io/usage/models
-
-    tensor 	The tokens’s slice of the parent Doc’s tensor. 
-
-"""
-
-
-""" 
-    Universal POS tags  https://universaldependencies.org/u/pos/all.html
-    Open class words
-    VERB
-    ADV
-    ADJ
-    NOUN
-    PROPN
-    INTJ
-
-    Closed class words
-    ADP
-    PRON
-    AUX
-    DET
-    NUM
-    PART: particle [en] ‘s [ja] か / ka
-    CCONJ
-    SCONJ
-
-    Other
-    PUNCT
-    SYM: symbol $, %, §, © +, −, ×, 
-    X
-
-    token.dep_  https://universaldependencies.org/u/dep/all.html
-"""
