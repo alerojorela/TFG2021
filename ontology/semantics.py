@@ -161,8 +161,6 @@ def find_semantic_relation(word1, word2):
             lugar
             persona
                 posesión
-                    alienable POSEER coche
-                    inalienable TENER ojos
         qualias o argumentos
 
     ejemplo "La tapa de latón de la caja de agujas de coser de mi tía de Toledo"
@@ -170,7 +168,7 @@ def find_semantic_relation(word1, word2):
         TENER < tapa caja >
         POSEER < tía ¿caja/tapa? >
         TENER < mi tía >
-        EN < tía Toledo >
+        EN/ORIGEN < tía Toledo >
         qualias o argumentos:
             SERVIR_PARA < agujas coser >
             CONTENER < caja agujas >
@@ -180,8 +178,8 @@ def find_semantic_relation(word1, word2):
             la ruptura DE las relaciones
             CONTENER < caja agujas >    <<<<<<< PREDICADO NOMINAL caja(continente, contenido)
         adjetivo enfatizado? "El imbécil/cerdo de Arnaldo" El cerdo Arnaldo
-        determinantes
-            "uno de esos barrios ricos". PERTENENCIA uno pertenece a barrios <>
+        determinantes, restricción de conjunto previo
+            "uno de esos barrios ricos"
 
     ¿diferencias entre POSEER Y TENER?
         TENER +-animado +-alienable

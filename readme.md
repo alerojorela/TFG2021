@@ -1,5 +1,7 @@
 ## Formalización semántica e inferencia computacional
 
+Trabajo realizado para culminar el grado de Lingüística y lenguas aplicadas impartido en la Universidad Complutense de Madrid (UCM).
+
 
 
 ### Resumen del trabajo (teórico y práctico)
@@ -8,9 +10,25 @@ Se exponen aquí ciertas herramientas conceptuales y modelos para la formalizaci
 
 El prototipo realizado es un modelo para trazar computacionalmente parte de los procesos de comprensión humana del lenguaje. El flujo del programa comienza por una entrada: un texto u oración; a continuación formaliza sus predicados y a partir de estos infiere información nueva a través de una base de conocimiento.
 
+![Flujo programa](img/Flujo programa.png)
+
+## Diagrama de la aplicación
+
+### Módulos
+
+![Diagrama aplicación1](img/Diagrama aplicación1.png)
+
+### Clases
+
+![Diagrama aplicación2](img/Diagrama aplicación2.png)
 
 
-## Instalación
+
+![Diagrama aplicación3](img/Diagrama aplicación3.png)
+
+
+
+## Instalación de dependencias
 
 ```
 import nltk
