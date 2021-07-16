@@ -1,8 +1,6 @@
 ## Formalización semántica e inferencia computacional
 
-Trabajo realizado para culminar el grado de Lingüística y lenguas aplicadas impartido en la Universidad Complutense de Madrid (UCM).
-
-
+Trabajo realizado para culminar el grado de Lingüística y lenguas aplicadas impartido en la Universidad Complutense de Madrid (UCM) realizado durante el periodo 2017-2021.
 
 ### Resumen del trabajo (teórico y práctico)
 
@@ -10,25 +8,23 @@ Se exponen aquí ciertas herramientas conceptuales y modelos para la formalizaci
 
 El prototipo realizado es un modelo para trazar computacionalmente parte de los procesos de comprensión humana del lenguaje. El flujo del programa comienza por una entrada: un texto u oración; a continuación formaliza sus predicados y a partir de estos infiere información nueva a través de una base de conocimiento.
 
-![Flujo programa](img/Flujo programa.png)
+![Flujo programa](./img/Flujo programa.png)
 
-## Diagrama de la aplicación
+## App diagrams
 
-### Módulos
+### Modules
 
-![Diagrama aplicación1](img/Diagrama aplicación1.png)
+![Diagrama aplicación1](./img/Diagrama aplicación1.png)
 
-### Clases
+### Classes
 
-![Diagrama aplicación2](img/Diagrama aplicación2.png)
-
-
-
-![Diagrama aplicación3](img/Diagrama aplicación3.png)
+![Diagrama aplicación2](./img/Diagrama aplicación2.png)
 
 
 
-## Instalación de dependencias
+![Diagrama aplicación3](./img/Diagrama aplicación3.png)
+
+## Dependencies setup
 
 ```
 import nltk
@@ -44,9 +40,7 @@ nltk.download('omw')
 # wget https://raw.githubusercontent.com/tylerneylon/explacy/master/explacy.py
 ```
 
-
-
-## Corpus de Spacy
+## Spanish spacy corpora
 
 ```
 es_core_news_lg
